@@ -83,8 +83,8 @@
           />
           <div class="candidate-icon" *ngIf="!candidate.photo">
             <svg
-              width="40"
-              height="40"
+              width="30"
+              height="30"
               viewBox="0 0 40 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -108,8 +108,8 @@
           </div>
           <div class="checkmark-badge" *ngIf="candidate.photo">
             <svg
-              width="16"
-              height="16"
+              width="12"
+              height="12"
               viewBox="0 0 16 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@
         </div>
         <div class="candidate-name">{{ candidate.name }}</div>
         <div class="candidate-location">{{ candidate.district }}</div>
-        <div class="candidate-rank">{{ candidate.rank }}</div>
+        <div class="candidate-rank">Rank: {{ candidate.rank }}</div>
       </div>
     </div>
 

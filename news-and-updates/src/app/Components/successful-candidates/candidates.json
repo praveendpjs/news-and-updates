@@ -1,9 +1,145 @@
 [
   {
+    "name": "SUSHIL SINGH",
+    "rank": "323",
+    "year": 2011,
+    "service": "CAPF",
+    "district": "",
+    "photo": "assets/candidates/2011/capf/sushil-singh.jpg"
+  },
+  {
+    "name": "AMIT KUMAR",
+    "rank": "394",
+    "year": 2011,
+    "service": "CAPF",
+    "district": "",
+    "photo": "assets/candidates/2011/capf/amit-kumar.jpg"
+  },
+  {
+    "name": "S.R.Subhakar",
+    "rank": "423",
+    "year": 2011,
+    "service": "CAPF",
+    "district": "",
+    "photo": "assets/candidates/2011/capf/s-r-subhakar.jpg"
+  },
+  {
+    "name": "BODHIDHARMAN. C.M",
+    "rank": "59",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Vellore",
+    "photo": "assets/candidates/2018/capf/bodhidharman-c-m.jpg"
+  },
+  {
+    "name": "RAJKUMAR. C",
+    "rank": "61",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Madurai",
+    "photo": "assets/candidates/2018/capf/rajkumar-c.jpg"
+  },
+  {
+    "name": "AKASH. K.M",
+    "rank": "125",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Kerala",
+    "photo": "assets/candidates/2018/capf/akash-k-m.jpg"
+  },
+  {
+    "name": "YUVANESH. E",
+    "rank": "175",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Tiruppur",
+    "photo": "assets/candidates/2018/capf/yuvanesh-e.jpg"
+  },
+  {
+    "name": "GUNASEKAR. T",
+    "rank": "201",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Salem",
+    "photo": "assets/candidates/2018/capf/gunasekar-t.jpg"
+  },
+  {
+    "name": "DINESHSWAMY PRASANNA. N",
+    "rank": "325",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Tirunelveli",
+    "photo": "assets/candidates/2018/capf/dineshswamy-prasanna-n.jpg"
+  },
+  {
+    "name": "KUDIYARASU. D",
+    "rank": "340",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Vellore",
+    "photo": "assets/candidates/2018/capf/kudiyarasu-d.jpg"
+  },
+  {
+    "name": "SULAL. S",
+    "rank": "369",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Kerala",
+    "photo": "assets/candidates/2018/capf/sulal-s.jpg"
+  },
+  {
+    "name": "BALAMURUGAN. N",
+    "rank": "381",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Tiruvarur",
+    "photo": "assets/candidates/2018/capf/balamurugan-n.jpg"
+  },
+  {
+    "name": "ASHOKKUMAR. M",
+    "rank": "396",
+    "year": 2018,
+    "service": "CAPF",
+    "district": "Karur",
+    "photo": "assets/candidates/2018/capf/ashokkumar-m.jpg"
+  },
+  {
+    "name": "BACKIA GOWTHAM. S",
+    "rank": "178",
+    "year": 2019,
+    "service": "CAPF",
+    "district": "Virudhunagar",
+    "photo": "assets/candidates/2019/capf/backia-gowtham-s.jpg"
+  },
+  {
+    "name": "KISHNAKUMAR. S",
+    "rank": "242",
+    "year": 2019,
+    "service": "CAPF",
+    "district": "Chennai",
+    "photo": "assets/candidates/2019/capf/kishnakumar-s.jpg"
+  },
+  {
+    "name": "KARTHIKEYAN. R",
+    "rank": "423",
+    "year": 2019,
+    "service": "CAPF",
+    "district": "Madurai",
+    "photo": "assets/candidates/2019/capf/karthikeyan-r.jpg"
+  },
+  {
+    "name": "SRIDHAR. J",
+    "rank": "139",
+    "year": 2019,
+    "service": "CAPF",
+    "district": "Trichy",
+    "photo": "assets/candidates/2019/capf/sridhar-j.jpg"
+  },
+  {
     "name": "Dr. V. Sasimohan",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Trichy",
     "photo": "assets/candidates/2008/ifos/sasimohan.jpg"
   },
@@ -11,7 +147,7 @@
     "name": "M. Ganesh Karthik",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Chennai",
     "photo": "assets/candidates/2008/ifos/ganesh-karthik.jpg"
   },
@@ -19,7 +155,7 @@
     "name": "M. Nithya Kalyani",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Ramanathapuram",
     "photo": "assets/candidates/2008/ifos/nithya-kalyani.jpg"
   },
@@ -27,7 +163,7 @@
     "name": "S. Senbagapriya",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Chennai",
     "photo": "assets/candidates/2008/ifos/senbagapriya.jpg"
   },
@@ -35,7 +171,7 @@
     "name": "Dr. R. Kanchana",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Namakkal",
     "photo": "assets/candidates/2008/ifos/kanchana.jpg"
   },
@@ -43,7 +179,7 @@
     "name": "P. Naveen Kumar",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Salem",
     "photo": "assets/candidates/2008/ifos/naveen-kumar.jpg"
   },
@@ -51,7 +187,7 @@
     "name": "P. Ramasamy",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Karur",
     "photo": "assets/candidates/2008/ifos/ramasamy.jpg"
   },
@@ -59,7 +195,7 @@
     "name": "B. Prabhakaran",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Trichy",
     "photo": "assets/candidates/2008/ifos/prabhakaran.jpg"
   },
@@ -67,7 +203,7 @@
     "name": "D. David Camus",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Kanyakumari",
     "photo": "assets/candidates/2008/ifos/david-camus.jpg"
   },
@@ -75,7 +211,7 @@
     "name": "P. Arthanari",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Salem",
     "photo": "assets/candidates/2008/ifos/arthanari.jpg"
   },
@@ -83,7 +219,7 @@
     "name": "A. Sakthivel",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Trichy",
     "photo": "assets/candidates/2008/ifos/sakthivel.jpg"
   },
@@ -91,9 +227,668 @@
     "name": "S. Jesin",
     "rank": "IFoS",
     "year": 2008,
-    "service": "IoFS",
+    "service": "IFOS",
     "district": "Kanyakumari",
     "photo": "assets/candidates/2008/ifos/jesin.jpg"
+  },
+  {
+    "name": "P.Shekar",
+    "rank": "IFoS",
+    "year": 2010,
+    "service": "IFOS",
+    "district": "Arakkonam",
+    "photo": "assets/candidates/2010/ifos/shekar.jpg"
+  },
+  {
+    "name": "A. R Swetha",
+    "rank": "IFoS",
+    "year": 2010,
+    "service": "IFOS",
+    "district": "Thiruvallur",
+    "photo": "assets/candidates/2010/ifos/swetha.jpg"
+  },
+
+  {
+    "name": "GANESH.N",
+    "rank": "IFoS",
+    "year": 2013,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2013/ifos/ganesh-n.jpg"
+  },
+  {
+    "name": "HARIS.S",
+    "rank": "IFoS",
+    "year": 2013,
+    "service": "IFOS",
+    "district": "Madurai",
+    "photo": "assets/candidates/2013/ifos/haris-s.jpg"
+  },
+  {
+    "name": "MADHAVARAJ.G.R",
+    "rank": "IFoS",
+    "year": 2013,
+    "service": "IFOS",
+    "district": "Cuddalore",
+    "photo": "assets/candidates/2013/ifos/madhavaraj-g-r.jpg"
+  },
+  {
+    "name": "RUTHREN.P",
+    "rank": "IFoS",
+    "year": 2013,
+    "service": "IFOS",
+    "district": "Theni Dt",
+    "photo": "assets/candidates/2013/ifos/ruthren-p.jpg"
+  },
+  {
+    "name": "THENMOZHI.V",
+    "rank": "IFoS",
+    "year": 2013,
+    "service": "IFOS",
+    "district": "Ariyalur Dt",
+    "photo": "assets/candidates/2013/ifos/thenmozhi-v.jpg"
+  },
+  {
+    "name": "VIKRANTH RAJA.A",
+    "rank": "IFoS",
+    "year": 2013,
+    "service": "IFOS",
+    "district": "Cuddalore",
+    "photo": "assets/candidates/2013/ifos/vikranth-raja-a.jpg"
+  },
+  {
+    "name": "KANNAN.MVG",
+    "rank": "IFoS",
+    "year": 2013,
+    "service": "IFOS",
+    "district": "Salem",
+    "photo": "assets/candidates/2013/ifos/kannan-mvg.jpg"
+  },
+  {
+    "name": "VIJAYABASKARA REDDY.P",
+    "rank": "IFoS",
+    "year": 2013,
+    "service": "IFOS",
+    "district": "Andhrapradesh",
+    "photo": "assets/candidates/2013/ifos/vijayabaskara-reddy-p.jpg"
+  },
+  {
+    "name": "Arunvignesh.C.S",
+    "rank": "IFoS",
+    "year": 2014,
+    "service": "IFOS",
+    "district": "Ramanathapuram",
+    "photo": "assets/candidates/2014/ifos/arunvignesh-c-s.jpg"
+  },
+  {
+    "name": "Elamaran.G",
+    "rank": "IFoS",
+    "year": 2014,
+    "service": "IFOS",
+    "district": "",
+    "photo": "assets/candidates/2014/ifos/elamaran-g.jpg"
+  },
+  {
+    "name": "Jeya Ragul Geshan.B",
+    "rank": "IFoS",
+    "year": 2014,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2014/ifos/jeya-ragul-geshan-b.jpg"
+  },
+  {
+    "name": "Narentheran.GG",
+    "rank": "IFoS",
+    "year": 2014,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2014/ifos/narentheran-gg.jpg"
+  },
+  {
+    "name": "Premkumar.R",
+    "rank": "IFoS",
+    "year": 2014,
+    "service": "IFOS",
+    "district": "Virudhunagar",
+    "photo": "assets/candidates/2014/ifos/premkumar-r.jpg"
+  },
+  {
+    "name": "Sathish.K.S",
+    "rank": "IFoS",
+    "year": 2014,
+    "service": "IFOS",
+    "district": "Erode",
+    "photo": "assets/candidates/2014/ifos/sathish-k-s.jpg"
+  },
+  {
+    "name": "Sudhan.S.P",
+    "rank": "IFoS",
+    "year": 2014,
+    "service": "IFOS",
+    "district": "",
+    "photo": "assets/candidates/2014/ifos/sudhan-s-p.jpg"
+  },
+  {
+    "name": "Vinothan.R",
+    "rank": "IFoS",
+    "year": 2014,
+    "service": "IFOS",
+    "district": "Karur",
+    "photo": "assets/candidates/2014/ifos/vinothan-r.jpg"
+  },
+  {
+    "name": "ANAND S",
+    "rank": "74",
+    "year": 2016,
+    "service": "IFOS",
+    "district": "Erode",
+    "photo": "assets/candidates/2016/ifos/anand-s.jpg"
+  },
+  {
+    "name": "GOWTHAM.R",
+    "rank": "55",
+    "year": 2016,
+    "service": "IFOS",
+    "district": "",
+    "photo": "assets/candidates/2016/ifos/gowtham-r.jpg"
+  },
+  {
+    "name": "ILAYARAJA M",
+    "rank": "103",
+    "year": 2016,
+    "service": "IFOS",
+    "district": "Thoothukudi",
+    "photo": "assets/candidates/2016/ifos/ilayaraja-m.jpg"
+  },
+  {
+    "name": "JEGATHEESWARAN P",
+    "rank": "78",
+    "year": 2016,
+    "service": "IFOS",
+    "district": "",
+    "photo": "assets/candidates/2016/ifos/jegatheeswaran-p.jpg"
+  },
+  {
+    "name": "KARTHICK P",
+    "rank": "67",
+    "year": 2016,
+    "service": "IFOS",
+    "district": "Erode",
+    "photo": "assets/candidates/2016/ifos/karthick-p.jpg"
+  },
+  {
+    "name": "NANDHAKUMAR. N",
+    "rank": "91",
+    "year": 2016,
+    "service": "IFOS",
+    "district": "Erode",
+    "photo": "assets/candidates/2016/ifos/nandhakumar-n.jpg"
+  },
+  {
+    "name": "SIDDHARTHA.B",
+    "rank": "84",
+    "year": 2016,
+    "service": "IFOS",
+    "district": "Thiruvannamalai",
+    "photo": "assets/candidates/2016/ifos/siddhartha-b.jpg"
+  },
+  {
+    "name": "KARTHIKEYANI.K",
+    "rank": "12",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Dindigul",
+    "photo": "assets/candidates/2017/ifos/karthikeyani-k.jpg"
+  },
+  {
+    "name": "PRASANTH.E",
+    "rank": "16",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Dindigul",
+    "photo": "assets/candidates/2017/ifos/prasanth-e.jpg"
+  },
+  {
+    "name": "SIVAGURU PRABAKARAN.M",
+    "rank": "20",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Thanjavur",
+    "photo": "assets/candidates/2017/ifos/sivaguru-prabakaran-m.jpg"
+  },
+  {
+    "name": "JONES JUSTIN.C",
+    "rank": "37",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2017/ifos/jones-justin-c.jpg"
+  },
+  {
+    "name": "VEJAYANANTHAM.TR",
+    "rank": "50",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Namakkal",
+    "photo": "assets/candidates/2017/ifos/vejayanantham-tr.jpg"
+  },
+  {
+    "name": "PRAVEEN.A",
+    "rank": "61",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2017/ifos/praveen-a.jpg"
+  },
+  {
+    "name": "REGINALD ROYSTON.A",
+    "rank": "62",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Salem",
+    "photo": "assets/candidates/2017/ifos/reginald-royston-a.jpg"
+  },
+  {
+    "name": "GANESAN.P",
+    "rank": "64",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Karur",
+    "photo": "assets/candidates/2017/ifos/ganesan-p.jpg"
+  },
+  {
+    "name": "VIGNESH APPAVU.G",
+    "rank": "84",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2017/ifos/vignesh-appavu-g.jpg"
+  },
+  {
+    "name": "ASWINKUMAR.T",
+    "rank": "108",
+    "year": 2017,
+    "service": "IFOS",
+    "district": "Dindigul",
+    "photo": "assets/candidates/2017/ifos/aswinkumar-t.jpg"
+  },
+  {
+    "name": "MOHAMMED YAKUB",
+    "rank": "38",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2018/ifos/mohammed-yakub.jpg"
+  },
+  {
+    "name": "NITHYANANTHAM L",
+    "rank": "40",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Tiruppur",
+    "photo": "assets/candidates/2018/ifos/nithyanantham-l.jpg"
+  },
+  {
+    "name": "RAMSUNDAR.M",
+    "rank": "43",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Cuddalore",
+    "photo": "assets/candidates/2018/ifos/ramsundar-m.jpg"
+  },
+  {
+    "name": "KARTHIKEYAN.M",
+    "rank": "53",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Tiruppur",
+    "photo": "assets/candidates/2018/ifos/karthikeyan-m.jpg"
+  },
+  {
+    "name": "VENKATESWARAN.M",
+    "rank": "58",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Salem",
+    "photo": "assets/candidates/2018/ifos/venkateswaran-m.jpg"
+  },
+  {
+    "name": "JAGADEESH.R",
+    "rank": "64",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Erode",
+    "photo": "assets/candidates/2018/ifos/jagadeesh-r.jpg"
+  },
+  {
+    "name": "VIVEK.P",
+    "rank": "65",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Pudukottai",
+    "photo": "assets/candidates/2018/ifos/vivek-p.jpg"
+  },
+  {
+    "name": "ARUNKUMAR.D",
+    "rank": "67",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Krishnagiri",
+    "photo": "assets/candidates/2018/ifos/arunkumar-d.jpg"
+  },
+  {
+    "name": "RAJKUMAR.M",
+    "rank": "70",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Pudukottai",
+    "photo": "assets/candidates/2018/ifos/rajkumar-m.jpg"
+  },
+  {
+    "name": "BALAMURUGAN P",
+    "rank": "74",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Kanchipuram",
+    "photo": "assets/candidates/2018/ifos/balamurugan-p.jpg"
+  },
+  {
+    "name": "VENKATESH PRABHU.N",
+    "rank": "88",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2018/ifos/venkatesh-prabhu-n.jpg"
+  },
+  {
+    "name": "MARIA SHINE. A",
+    "rank": "51",
+    "year": 2018,
+    "service": "IFOS",
+    "district": "",
+    "photo": "assets/candidates/2018/ifos/maria-shine-a.jpg"
+  },
+
+  {
+    "name": "RAMYA. R",
+    "rank": "15",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Virudhunagar",
+    "photo": "assets/candidates/2019/ifos/ramya-r.jpg"
+  },
+  {
+    "name": "KRITHIGA. S",
+    "rank": "18",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Kallakuruchi",
+    "photo": "assets/candidates/2019/ifos/krithiga-s.jpg"
+  },
+  {
+    "name": "DEVARAJ. P",
+    "rank": "21",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Karur",
+    "photo": "assets/candidates/2019/ifos/devaraj-p.jpg"
+  },
+  {
+    "name": "MUTHU. S",
+    "rank": "23",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Sivagangai",
+    "photo": "assets/candidates/2019/ifos/muthu-s.jpg"
+  },
+  {
+    "name": "KRISHNAKUMAR. S",
+    "rank": "37",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Tiruppur",
+    "photo": "assets/candidates/2019/ifos/krishnakumar-s.jpg"
+  },
+  {
+    "name": "DEEPIKA. S",
+    "rank": "50",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Salem",
+    "photo": "assets/candidates/2019/ifos/deepika-s.jpg"
+  },
+  {
+    "name": "SIVA SHAKTHI. B",
+    "rank": "59",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Nagapattinam",
+    "photo": "assets/candidates/2019/ifos/siva-shakthi-b.jpg"
+  },
+  {
+    "name": "RAJA. M",
+    "rank": "86",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Tenkasi",
+    "photo": "assets/candidates/2019/ifos/raja-m.jpg"
+  },
+  {
+    "name": "GITANJALI. J",
+    "rank": "P",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2019/ifos/gitanjali-j.jpg"
+  },
+  {
+    "name": "RAJESH KANNA. T",
+    "rank": "P",
+    "year": 2019,
+    "service": "IFOS",
+    "district": "Madurai",
+    "photo": "assets/candidates/2019/ifos/rajesh-kanna-t.jpg"
+  },
+
+  {
+    "name": "ARAVIND. T",
+    "rank": "106",
+    "year": 2021,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2021/ifos/aravind-t.jpg"
+  },
+  {
+    "name": "ARULSELVAN. K",
+    "rank": "36",
+    "year": 2021,
+    "service": "IFOS",
+    "district": "Erode",
+    "photo": "assets/candidates/2021/ifos/arulselvan-k.jpg"
+  },
+  {
+    "name": "ELAVARASAN. K",
+    "rank": "31",
+    "year": 2021,
+    "service": "IFOS",
+    "district": "Salem",
+    "photo": "assets/candidates/2021/ifos/elavarasan-k.jpg"
+  },
+  {
+    "name": "KAAVIYA. P. B",
+    "rank": "38",
+    "year": 2021,
+    "service": "IFOS",
+    "district": "Dindigul",
+    "photo": "assets/candidates/2021/ifos/kaaviya-p-b.jpg"
+  },
+  {
+    "name": "SUBBURAJ. G",
+    "rank": "57",
+    "year": 2021,
+    "service": "IFOS",
+    "district": "Tenkasi",
+    "photo": "assets/candidates/2021/ifos/subburaj-g.jpg"
+  },
+  {
+    "name": "SUNDARA NIVEADHAN. M",
+    "rank": "29",
+    "year": 2021,
+    "service": "IFOS",
+    "district": "Pudukottai",
+    "photo": "assets/candidates/2021/ifos/sundara-niveadhan-m.jpg"
+  },
+  {
+    "name": "VALLI. N",
+    "rank": "28",
+    "year": 2021,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2021/ifos/valli-n.jpg"
+  },
+  {
+    "name": "VAISHALI. R",
+    "rank": "37",
+    "year": 2022,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2022/ifos/vaishali-r.jpg"
+  },
+  {
+    "name": "KRISHNA PRASATH. B",
+    "rank": "44",
+    "year": 2022,
+    "service": "IFOS",
+    "district": "Tiruppur",
+    "photo": "assets/candidates/2022/ifos/krishna-prasath-b.jpg"
+  },
+  {
+    "name": "NEELA M",
+    "rank": "69",
+    "year": 2022,
+    "service": "IFOS",
+    "district": "Erode",
+    "photo": "assets/candidates/2022/ifos/neela-m.jpg"
+  },
+  {
+    "name": "SUGA. E",
+    "rank": "78",
+    "year": 2022,
+    "service": "IFOS",
+    "district": "Erode",
+    "photo": "assets/candidates/2022/ifos/suga-e.jpg"
+  },
+  {
+    "name": "MUTHARASI. M",
+    "rank": "83",
+    "year": 2022,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2022/ifos/mutharasi-m.jpg"
+  },
+  {
+    "name": "SUSHMITHA. R",
+    "rank": "118",
+    "year": 2022,
+    "service": "IFOS",
+    "district": "Cuddalore",
+    "photo": "assets/candidates/2022/ifos/sushmitha-r.jpg"
+  },
+  {
+    "name": "ASWINI. S",
+    "rank": "115",
+    "year": 2023,
+    "service": "IFOS",
+    "district": "Kanyakumari",
+    "photo": "assets/candidates/2023/ifos/aswini-s.jpg"
+  },
+  {
+    "name": "BHARATH PRADEEV. D",
+    "rank": "62",
+    "year": 2023,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2023/ifos/bharath-pradeev-d.jpg"
+  },
+  {
+    "name": "GOVINTHRAM. A",
+    "rank": "64",
+    "year": 2023,
+    "service": "IFOS",
+    "district": "Dindigul",
+    "photo": "assets/candidates/2023/ifos/govinthram-a.jpg"
+  },
+  {
+    "name": "KRISHNA SREE VASTAV. G",
+    "rank": "52",
+    "year": 2023,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2023/ifos/krishna-sree-vastav-g.jpg"
+  },
+  {
+    "name": "PRASATH. S",
+    "rank": "85",
+    "year": 2023,
+    "service": "IFOS",
+    "district": "Cuddalore",
+    "photo": "assets/candidates/2023/ifos/prasath-s.jpg"
+  },
+  {
+    "name": "PRIYADHARSHINI",
+    "rank": "82",
+    "year": 2023,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2023/ifos/priyadharshini.jpg"
+  },
+  {
+    "name": "VIGNESH. S.A",
+    "rank": "87",
+    "year": 2023,
+    "service": "IFOS",
+    "district": "Virudhunagar",
+    "photo": "assets/candidates/2023/ifos/vignesh-s-a.jpg"
+  },
+  {
+    "name": "VINOTH. A.R",
+    "rank": "79",
+    "year": 2023,
+    "service": "IFOS",
+    "district": "Kanyakumari",
+    "photo": "assets/candidates/2023/ifos/vinoth-a-r.jpg"
+  },
+  {
+    "name": "BIBISHA. J",
+    "rank": "88",
+    "year": 2024,
+    "service": "IFOS",
+    "district": "Kanyakumari",
+    "photo": "assets/candidates/2024/ifos/bibisha-j.jpg"
+  },
+  {
+    "name": "SWETHA. C",
+    "rank": "105",
+    "year": 2024,
+    "service": "IFOS",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2024/ifos/swetha-c.jpg"
+  },
+  {
+    "name": "BLESSY STEJIL. P",
+    "rank": "110",
+    "year": 2024,
+    "service": "IFOS",
+    "district": "Tirunelveli",
+    "photo": "assets/candidates/2024/ifos/blessy-stejil-p.jpg"
+  },
+  {
+    "name": "ARUN SRINIVAS. P",
+    "rank": "125",
+    "year": 2024,
+    "service": "IFOS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2024/ifos/arun-srinivas-p.jpg"
   },
   {
     "name": "ACM ABINESH KUMAR",
@@ -144,52 +939,13 @@
     "photo": "assets/candidates/2020/epfo/buvanesh.jpg"
   },
   {
-    "name": "Adam",
-    "rank": "IPS Rank-45",
-    "year": 2024,
-    "service": "UPSC civil service",
-    "district": "Coimbatore"
-  },
-  {
-    "name": "Tamara",
-    "rank": "TNPSC Rank-12",
+    "name": "GOKUL KALEESWARAN .P",
+    "rank": "35th AIR | TN - 1st",
     "year": 2024,
     "service": "EPFO",
-    "district": "Madurai"
-  },
-  {
-    "name": "Raj Kumar",
-    "rank": "IAS Rank-67",
-    "year": 2023,
-    "service": "UPSC civil service",
-    "district": "Trichy"
-  },
-  {
-    "name": "Priya Sharma",
-    "rank": "IPS Rank-89",
-    "year": 2023,
-    "service": "CAPF",
-    "district": "Salem"
-  },
-  {
-    "name": "Vikram Singh",
-    "rank": "TNPSC Rank-34",
-    "year": 2022,
-    "service": "IoFS",
-    "district": "Erode"
-  },
-  {
-    "name": "Sneha Patel",
-    "rank": "IAS Rank-56",
-    "year": 2024,
-    "service": "UPSC civil service",
-    "district": "Vellore"
-  },
-  {
-    "name": "Arjun Reddy",
-    "rank": "IPS Rank-78",
-    "year": 2024,
-    "service": "CAPF",
-    "district": "Tirunelveli"
+    "district": "Thiruppur",
+    "photo": "assets/candidates/2024/epfo/gokul-kaleeswaran-p.jpg"
   }
+
+
 ]

@@ -6,7 +6,7 @@ interface Candidate {
   name: string;
   rank: string;
   year: number;
-  service: 'IoFS' | 'EPFO' | 'CAPF' | 'UPSC civil service';
+  service: 'IFOS' | 'EPFO' | 'CAPF' | 'UPSC civil service';
   photo?: string;
   district: string;
 }
@@ -18,28 +18,28 @@ interface Candidate {
   styleUrl: './successful-candidates.css',
 })
 export class SuccessfulCandidates {
-  years: number[] = [2024, 2023, 2022, 2008, 2020].sort((a, b) => b - a);
+  years: number[] = [2024, 2023, 2022, 2008, 2020, 2010, 2013, 2014, 2016, 2017, 2018, 2011].sort((a, b) => b - a);
   selectedYear: number = 2024;
 
-  services: ('IoFS' | 'EPFO' | 'CAPF' | 'UPSC civil service')[] = [
-    'IoFS',
+  services: ('IFOS' | 'EPFO' | 'CAPF' | 'UPSC')[] = [
+    'IFOS',
     'EPFO',
     'CAPF',
-    'UPSC civil service',
+    'UPSC',
   ];
-  selectedService: 'IoFS' | 'EPFO' | 'CAPF' | 'UPSC civil service' | 'All' = 'All';
+  selectedService: 'IFOS' | 'EPFO' | 'CAPF' | 'UPSC' | 'All' = 'All';
 
   candidates: Candidate[] = candidatesData as Candidate[];
 
   currentCarouselIndex: number = 0;
-  itemsPerPage: number = 3;
+  itemsPerPage: number = 5;
 
   selectYear(year: number): void {
     this.selectedYear = year;
     this.currentCarouselIndex = 0;
   }
 
-  selectService(service: 'IoFS' | 'EPFO' | 'CAPF' | 'UPSC civil service' | 'All'): void {
+  selectService(service: 'IFOS' | 'EPFO' | 'CAPF' | 'UPSC' | 'All'): void {
     this.selectedService = service;
     this.currentCarouselIndex = 0;
   }
@@ -67,7 +67,7 @@ export class SuccessfulCandidates {
     if (container) {
       container.innerHTML = `
         <div class="candidate-icon">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="20" cy="15" r="8" fill="#20B2AA" opacity="0.2" />
             <path d="M10 32C10 27 14 23 20 23C26 23 30 27 30 32" stroke="#20B2AA" stroke-width="3" stroke-linecap="round" />
             <circle cx="30" cy="8" r="4" fill="#22C55E" />
