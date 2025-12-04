@@ -36,3 +36,4 @@ public/assets/candidates/2008/ifos/
 - Aspect ratio: 3:4 (width:height)
 - Background: Solid color (preferably white or light blue)
 
+
