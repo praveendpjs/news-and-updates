@@ -235,12 +235,22 @@ export class SuccessfulCandidates {
     return filtered.slice(start, end);
   }
 
-  get showTableView(): boolean {
-    return this.filteredCandidates.some((candidate) => candidate.photo);
-  }
-
-  get allFilteredCandidates(): Candidate[] {
-    return this.filteredCandidates;
+  onImageError(event: Event): void {
+    const img = event.target as HTMLImageElement;
+    img.style.display = 'none';
+    const container = img.parentElement;
+    if (container) {
+      container.innerHTML = `
+        <div class="candidate-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="15" r="8" fill="#20B2AA" opacity="0.2" />
+            <path d="M10 32C10 27 14 23 20 23C26 23 30 27 30 32" stroke="#20B2AA" stroke-width="3" stroke-linecap="round" />
+            <circle cx="30" cy="8" r="4" fill="#22C55E" />
+            <path d="M28 6L29.5 7.5L32 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      `;
+    }
   }
 
   canGoPrevious(): boolean {

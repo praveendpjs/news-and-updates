@@ -42,42 +42,8 @@
     </button>
   </div>
 
-  <!-- Candidate Table View (for candidates with photos) -->
-  <div class="table-container" *ngIf="showTableView">
-    <table class="candidates-table">
-      <thead>
-        <tr>
-          <th>S.No</th>
-          <th>Photo</th>
-          <th>Name</th>
-          <th>Native / District</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          *ngFor="let candidate of allFilteredCandidates; let i = index"
-          [class.highlight]="i === 0 || i === 9"
-        >
-          <td class="sno-cell">{{ i + 1 }}</td>
-          <td class="photo-cell">
-            <div class="photo-wrapper">
-              <img
-                [src]="candidate.photo || 'assets/candidates/placeholder.jpg'"
-                [alt]="candidate.name"
-                class="candidate-photo"
-                (error)="$any($event.target).src = 'assets/candidates/placeholder.jpg'"
-              />
-            </div>
-          </td>
-          <td class="name-cell">{{ candidate.name }}</td>
-          <td class="district-cell">{{ candidate.district }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Candidate Carousel (for candidates without photos) -->
-  <div class="carousel-container" *ngIf="!showTableView">
+  <!-- Candidate Cards -->
+  <div class="carousel-container">
     <button
       class="carousel-button prev"
       (click)="goPrevious()"
@@ -107,30 +73,57 @@
         class="candidate-card"
         *ngFor="let candidate of visibleCandidates"
       >
-        <div class="candidate-icon">
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="20" cy="15" r="8" fill="#20B2AA" opacity="0.2" />
-            <path
-              d="M10 32C10 27 14 23 20 23C26 23 30 27 30 32"
-              stroke="#20B2AA"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <circle cx="30" cy="8" r="4" fill="#22C55E" />
-            <path
-              d="M28 6L29.5 7.5L32 5"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+        <div class="candidate-photo-container">
+          <img
+            *ngIf="candidate.photo"
+            [src]="candidate.photo"
+            [alt]="candidate.name"
+            class="candidate-photo-img"
+            (error)="onImageError($event)"
+          />
+          <div class="candidate-icon" *ngIf="!candidate.photo">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="15" r="8" fill="#20B2AA" opacity="0.2" />
+              <path
+                d="M10 32C10 27 14 23 20 23C26 23 30 27 30 32"
+                stroke="#20B2AA"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <circle cx="30" cy="8" r="4" fill="#22C55E" />
+              <path
+                d="M28 6L29.5 7.5L32 5"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="checkmark-badge" *ngIf="candidate.photo">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="8" cy="8" r="8" fill="#22C55E" />
+              <path
+                d="M5 8L7 10L11 6"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
         </div>
         <div class="candidate-name">{{ candidate.name }}</div>
         <div class="candidate-location">{{ candidate.location }}</div>
@@ -163,8 +156,10 @@
     </button>
   </div>
 
-  <!-- View More Button (only for carousel view) -->
-  <div class="view-more-container" *ngIf="!showTableView">
-    <button class="view-more-button">View More Candidates</button>
+  <!-- View More Button -->
+  <div class="view-more-container">
+    <button class="view-more-button" *ngIf="canGoNext()" (click)="goNext()">
+      View More Candidates
+    </button>
   </div>
 </div>
