@@ -1,1 +1,117 @@
-<p>successful-candidates works!</p>
+<div class="successful-candidates-page">
+  <!-- Header Banner -->
+  <div class="banner">
+    <h1 class="banner-title">Successful Candidates</h1>
+    <p class="banner-subtitle">தமிழகத்தின் முன்னணி மாணவர்களின் வெற்றிக் கதைகள்.</p>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-container">
+    <a href="/" class="breadcrumb">Home → Successful Candidates</a>
+  </div>
+
+
+  <!-- Year Filter -->
+  <div class="year-filter">
+    <button
+      *ngFor="let year of years"
+      class="year-button"
+      [class.active]="year === selectedYear"
+      (click)="selectYear(year)"
+    >
+      {{ year }}
+    </button>
+  </div>
+
+  <!-- Candidate Carousel -->
+  <div class="carousel-container">
+    <button
+      class="carousel-button prev"
+      (click)="goPrevious()"
+      [disabled]="!canGoPrevious()"
+      [class.disabled]="!canGoPrevious()"
+      aria-label="Previous"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15 18L9 12L15 6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <div class="carousel-content">
+      <div
+        class="candidate-card"
+        *ngFor="let candidate of visibleCandidates"
+      >
+        <div class="candidate-icon">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20" cy="15" r="8" fill="#20B2AA" opacity="0.2" />
+            <path
+              d="M10 32C10 27 14 23 20 23C26 23 30 27 30 32"
+              stroke="#20B2AA"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <circle cx="30" cy="8" r="4" fill="#22C55E" />
+            <path
+              d="M28 6L29.5 7.5L32 5"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="candidate-name">{{ candidate.name }}</div>
+        <div class="candidate-location">{{ candidate.location }}</div>
+        <div class="candidate-rank">{{ candidate.rank }}</div>
+      </div>
+    </div>
+
+    <button
+      class="carousel-button next"
+      (click)="goNext()"
+      [disabled]="!canGoNext()"
+      [class.disabled]="!canGoNext()"
+      aria-label="Next"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9 18L15 12L9 6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <!-- View More Button -->
+  <div class="view-more-container">
+    <button class="view-more-button">View More Candidates</button>
+  </div>
+</div>
