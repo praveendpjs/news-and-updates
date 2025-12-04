@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "type": "article",
+    "title": "Academy Celebrates Record Breaking UPSC Results",
+    "newspaper": "The Hindu",
+    "date": "2024-11-15",
+    "imageUrl": "assets/media/articles/article1.jpg",
+    "articleUrl": "https://example.com/article1",
+    "excerpt": "The academy has achieved remarkable success with over 50 students clearing the UPSC examinations this year."
+  },
+  {
+    "id": 2,
+    "type": "video",
+    "title": "Success Stories: Our UPSC Toppers Share Their Journey",
+    "description": "Watch our successful candidates share their preparation strategies and experiences.",
+    "date": "2024-11-10",
+    "youtubeVideoId": "dQw4w9WgXcQ",
+    "thumbnailUrl": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+  },
+  {
+    "id": 3,
+    "type": "article",
+    "title": "New Batch Launch for Civil Services Preparation",
+    "newspaper": "The Times of India",
+    "date": "2024-11-08",
+    "imageUrl": "assets/media/articles/article2.jpg",
+    "articleUrl": "https://example.com/article2",
+    "excerpt": "The academy announces a new batch with updated curriculum and expert faculty members."
+  },
+  {
+    "id": 4,
+    "type": "video",
+    "title": "Academy Faculty Interview: Teaching Methodology",
+    "description": "Our expert faculty members discuss their teaching approach and success strategies.",
+    "date": "2024-11-05",
+    "youtubeVideoId": "dQw4w9WgXcQ",
+    "thumbnailUrl": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+  },
+  {
+    "id": 5,
+    "type": "article",
+    "title": "Scholarship Program for Meritorious Students",
+    "newspaper": "Deccan Chronicle",
+    "date": "2024-11-01",
+    "imageUrl": "assets/media/articles/article3.jpg",
+    "articleUrl": "https://example.com/article3",
+    "excerpt": "The academy introduces a new scholarship program offering up to 50% fee waiver for deserving students."
+  },
+  {
+    "id": 6,
+    "type": "video",
+    "title": "Campus Tour: Facilities and Infrastructure",
+    "description": "Take a virtual tour of our state-of-the-art campus facilities and learning environment.",
+    "date": "2024-10-28",
+    "youtubeVideoId": "dQw4w9WgXcQ",
+    "thumbnailUrl": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+  }
+]
+

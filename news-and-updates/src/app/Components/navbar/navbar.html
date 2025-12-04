@@ -1,0 +1,55 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-brand">
+      <a routerLink="/" class="brand-link">Academy</a>
+    </div>
+    
+    <button
+      class="menu-toggle"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="isMenuOpen"
+      aria-label="Toggle navigation menu"
+    >
+      <span class="hamburger-line" [class.active]="isMenuOpen"></span>
+      <span class="hamburger-line" [class.active]="isMenuOpen"></span>
+      <span class="hamburger-line" [class.active]="isMenuOpen"></span>
+    </button>
+    
+    <ul class="navbar-menu" [class.active]="isMenuOpen">
+      <li class="nav-item">
+        <a
+          routerLink="/successful-candidates"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: false }"
+          class="nav-link"
+          (click)="closeMenu()"
+        >
+          Successful Candidates
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          routerLink="/academy-announcements"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: false }"
+          class="nav-link"
+          (click)="closeMenu()"
+        >
+          News and Updates
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          routerLink="/media-and-press"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: false }"
+          class="nav-link"
+          (click)="closeMenu()"
+        >
+          Media & Press
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+

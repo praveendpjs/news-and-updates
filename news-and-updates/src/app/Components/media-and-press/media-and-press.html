@@ -1,0 +1,99 @@
+<div class="media-page">
+  <!-- Header -->
+  <div class="page-header">
+    <h1 class="page-title">Media & Press</h1>
+    <p class="page-subtitle">Stay updated with our latest news, articles, and videos</p>
+  </div>
+
+  <!-- Filters Section -->
+  <div class="filters-section">
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search articles and videos..."
+        [(ngModel)]="searchQuery"
+      />
+    </div>
+    
+    <div class="filter-container">
+      <select class="filter-select" [(ngModel)]="selectedType">
+        <option value="all">All Media</option>
+        <option value="article">Articles</option>
+        <option value="video">Videos</option>
+      </select>
+    </div>
+    
+    <div class="sort-container">
+      <select class="filter-select" [(ngModel)]="sortOrder">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Media Grid -->
+  <div class="media-grid">
+    <!-- Article Cards -->
+    <div
+      class="media-card article-card"
+      *ngFor="let item of filteredMedia"
+      [ngSwitch]="item.type"
+    >
+      <!-- Article Template -->
+      <div *ngSwitchCase="'article'" class="article-content">
+        <div class="article-image-container" *ngIf="item.imageUrl">
+          <img
+            [src]="item.imageUrl"
+            [alt]="item.title"
+            class="article-image"
+            (error)="$any($event.target).src = 'assets/media/placeholder.jpg'"
+          />
+        </div>
+        <div class="article-badge">Newspaper Article</div>
+        <div class="card-header">
+          <h3 class="card-title">{{ item.title }}</h3>
+        </div>
+        <div class="card-meta">
+          <span class="newspaper-name" *ngIf="item.newspaper">{{ item.newspaper }}</span>
+          <span class="card-date">{{ formatDate(item.date) }}</span>
+        </div>
+        <p class="card-excerpt" *ngIf="item.excerpt">{{ item.excerpt }}</p>
+        <button
+          class="read-more-btn"
+          (click)="openArticle(item.articleUrl)"
+          *ngIf="item.articleUrl"
+        >
+          Read Full Article →
+        </button>
+      </div>
+
+      <!-- Video Template -->
+      <div *ngSwitchCase="'video'" class="video-content">
+        <div class="video-container">
+          <iframe
+            [src]="getYouTubeEmbedUrl(item.youtubeVideoId!)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="youtube-embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-badge">YouTube Video</div>
+        <div class="card-header">
+          <h3 class="card-title">{{ item.title }}</h3>
+        </div>
+        <div class="card-meta">
+          <span class="card-date">{{ formatDate(item.date) }}</span>
+        </div>
+        <p class="card-description" *ngIf="item.description">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div class="empty-state" *ngIf="filteredMedia.length === 0">
+    <p>No media items found. Try adjusting your filters.</p>
+  </div>
+</div>

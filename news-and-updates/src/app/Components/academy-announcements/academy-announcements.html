@@ -1,0 +1,258 @@
+<div class="announcements-page">
+  <!-- Header -->
+  <div class="page-header">
+    <h1 class="page-title">News and Updates</h1>
+  </div>
+
+  <!-- Filters and Search Section -->
+  <div class="filters-section">
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search..."
+        [(ngModel)]="searchQuery"
+        (input)="onSearchChange()"
+      />
+    </div>
+    
+    <div class="filter-container">
+      <select
+        class="filter-select"
+        [(ngModel)]="selectedCategory"
+        (change)="onCategoryChange()"
+      >
+        <option *ngFor="let category of categories" [value]="category">
+          {{ category }}
+        </option>
+      </select>
+    </div>
+    
+    <div class="sort-container">
+      <select
+        class="filter-select"
+        [(ngModel)]="sortOrder"
+        (change)="onSortChange()"
+      >
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Announcements Grid -->
+  <div class="announcements-grid">
+    <div
+      class="announcement-card"
+      *ngFor="let announcement of paginatedAnnouncements"
+    >
+      <div class="card-header">
+        <h3 class="card-title">{{ announcement.title }}</h3>
+        <span class="new-badge" *ngIf="announcement.isNew">NEW</span>
+      </div>
+      
+      <div class="card-date">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="calendar-icon"
+        >
+          <path
+            d="M3 2C2.44772 2 2 2.44772 2 3V13C2 13.5523 2.44772 14 3 14H13C13.5523 14 14 13.5523 14 13V3C14 2.44772 13.5523 2 13 2H3ZM1 3C1 1.89543 1.89543 1 3 1H13C14.1046 1 15 1.89543 15 3V13C15 14.1046 14.1046 15 13 15H3C1.89543 15 1 14.1046 1 13V3Z"
+            fill="currentColor"
+          />
+          <path
+            d="M5 1C5 0.447715 5.44772 0 6 0C6.55228 0 7 0.447715 7 1V3C7 3.55228 6.55228 4 6 4C5.44772 4 5 3.55228 5 3V1Z"
+            fill="currentColor"
+          />
+          <path
+            d="M9 1C9 0.447715 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V3C11 3.55228 10.5523 4 10 4C9.44772 4 9 3.55228 9 3V1Z"
+            fill="currentColor"
+          />
+          <path
+            d="M2 5.5C2 5.22386 2.22386 5 2.5 5H13.5C13.7761 5 14 5.22386 14 5.5C14 5.77614 13.7761 6 13.5 6H2.5C2.22386 6 2 5.77614 2 5.5Z"
+            fill="currentColor"
+          />
+        </svg>
+        <span>{{ formatDate(announcement.date) }}</span>
+      </div>
+      
+      <p class="card-description">{{ announcement.description }}</p>
+      
+      <button class="view-more-btn" (click)="openModal(announcement)">
+        View More →
+      </button>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination-container" *ngIf="totalPages > 1">
+    <button
+      *ngFor="let page of pages"
+      class="pagination-btn"
+      [class.active]="page === currentPage"
+      (click)="goToPage(page)"
+    >
+      {{ page }}
+    </button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" *ngIf="isModalOpen" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="modal-close" (click)="closeModal()" aria-label="Close">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 6L6 18M6 6L18 18"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    
+    <div class="modal-body" *ngIf="selectedAnnouncement">
+      <div class="modal-header">
+        <h2 class="modal-title">{{ selectedAnnouncement.title }}</h2>
+        <span class="new-badge" *ngIf="selectedAnnouncement.isNew">NEW</span>
+      </div>
+      
+      <div class="modal-date">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="calendar-icon"
+        >
+          <path
+            d="M3 2C2.44772 2 2 2.44772 2 3V13C2 13.5523 2.44772 14 3 14H13C13.5523 14 14 13.5523 14 13V3C14 2.44772 13.5523 2 13 2H3ZM1 3C1 1.89543 1.89543 1 3 1H13C14.1046 1 15 1.89543 15 3V13C15 14.1046 14.1046 15 13 15H3C1.89543 15 1 14.1046 1 13V3Z"
+            fill="currentColor"
+          />
+          <path
+            d="M5 1C5 0.447715 5.44772 0 6 0C6.55228 0 7 0.447715 7 1V3C7 3.55228 6.55228 4 6 4C5.44772 4 5 3.55228 5 3V1Z"
+            fill="currentColor"
+          />
+          <path
+            d="M9 1C9 0.447715 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V3C11 3.55228 10.5523 4 10 4C9.44772 4 9 3.55228 9 3V1Z"
+            fill="currentColor"
+          />
+          <path
+            d="M2 5.5C2 5.22386 2.22386 5 2.5 5H13.5C13.7761 5 14 5.22386 14 5.5C14 5.77614 13.7761 6 13.5 6H2.5C2.22386 6 2 5.77614 2 5.5Z"
+            fill="currentColor"
+          />
+        </svg>
+        <span>{{ formatDate(selectedAnnouncement.date) }}</span>
+      </div>
+      
+      <div class="modal-category">
+        <strong>Category:</strong> {{ selectedAnnouncement.category }}
+      </div>
+      
+      <div class="modal-full-content">
+        <p>{{ selectedAnnouncement.fullContent }}</p>
+      </div>
+      
+      <!-- Document Pages Viewer -->
+      <div class="document-viewer-container" *ngIf="hasDocumentPages">
+        <div class="document-viewer-header">
+          <h3 class="document-viewer-title">Document Preview</h3>
+          <span class="page-counter" *ngIf="totalDocumentPages > 0">
+            Page {{ currentDocumentPage + 1 }} of {{ totalDocumentPages }}
+          </span>
+        </div>
+        
+        <div class="document-pages-wrapper">
+          <button
+            class="page-nav-btn prev-btn"
+            (click)="goToPreviousPage()"
+            [disabled]="!canGoToPreviousPage()"
+            [class.disabled]="!canGoToPreviousPage()"
+            aria-label="Previous page"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          
+          <div class="document-page-container">
+            <img
+              [src]="currentPageImage"
+              [alt]="'Page ' + (currentDocumentPage + 1) + ' of ' + selectedAnnouncement?.title"
+              class="document-page-image"
+              (error)="onImageError($event)"
+              loading="lazy"
+            />
+          </div>
+          
+          <button
+            class="page-nav-btn next-btn"
+            (click)="goToNextPage()"
+            [disabled]="!canGoToNextPage()"
+            [class.disabled]="!canGoToNextPage()"
+            aria-label="Next page"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Page Thumbnails -->
+        <div class="page-thumbnails" *ngIf="totalDocumentPages > 1">
+          <button
+            *ngFor="let page of documentPages; let i = index"
+            class="thumbnail-btn"
+            [class.active]="i === currentDocumentPage"
+            (click)="goToDocumentPage(i)"
+            [attr.aria-label]="'Go to page ' + (i + 1)"
+          >
+            <img
+              [src]="page"
+              [alt]="'Page ' + (i + 1) + ' thumbnail'"
+              class="thumbnail-image"
+              loading="lazy"
+            />
+            <span class="thumbnail-number">{{ i + 1 }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

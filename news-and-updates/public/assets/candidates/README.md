@@ -37,3 +37,4 @@ public/assets/candidates/2008/ifos/
 - Background: Solid color (preferably white or light blue)
 
 
+
