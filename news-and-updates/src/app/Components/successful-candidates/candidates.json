@@ -1,0 +1,171 @@
+[
+  {
+    "name": "Dr. V. Sasimohan",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Trichy",
+    "photo": "assets/candidates/2008/ifos/sasimohan.jpg"
+  },
+  {
+    "name": "M. Ganesh Karthik",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2008/ifos/ganesh-karthik.jpg"
+  },
+  {
+    "name": "M. Nithya Kalyani",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Ramanathapuram",
+    "photo": "assets/candidates/2008/ifos/nithya-kalyani.jpg"
+  },
+  {
+    "name": "S. Senbagapriya",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Chennai",
+    "photo": "assets/candidates/2008/ifos/senbagapriya.jpg"
+  },
+  {
+    "name": "Dr. R. Kanchana",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Namakkal",
+    "photo": "assets/candidates/2008/ifos/kanchana.jpg"
+  },
+  {
+    "name": "P. Naveen Kumar",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Salem",
+    "photo": "assets/candidates/2008/ifos/naveen-kumar.jpg"
+  },
+  {
+    "name": "P. Ramasamy",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Karur",
+    "photo": "assets/candidates/2008/ifos/ramasamy.jpg"
+  },
+  {
+    "name": "B. Prabhakaran",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Trichy",
+    "photo": "assets/candidates/2008/ifos/prabhakaran.jpg"
+  },
+  {
+    "name": "D. David Camus",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Kanyakumari",
+    "photo": "assets/candidates/2008/ifos/david-camus.jpg"
+  },
+  {
+    "name": "P. Arthanari",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Salem",
+    "photo": "assets/candidates/2008/ifos/arthanari.jpg"
+  },
+  {
+    "name": "A. Sakthivel",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Trichy",
+    "photo": "assets/candidates/2008/ifos/sakthivel.jpg"
+  },
+  {
+    "name": "S. Jesin",
+    "rank": "IFoS",
+    "year": 2008,
+    "service": "IoFS",
+    "district": "Kanyakumari",
+    "photo": "assets/candidates/2008/ifos/jesin.jpg"
+  },
+  {
+    "name": "ACM ABINESH KUMAR",
+    "rank": "326",
+    "year": 2020,
+    "service": "EPFO",
+    "district": "Chennai",
+    "photo": "assets/candidates/2020/epfo/abinesh.jpg"
+  },
+  {
+    "name": "SUBAM RAJ. W",
+    "rank": "215",
+    "year": 2020,
+    "service": "EPFO",
+    "district": "Bihar",
+    "photo": "assets/candidates/2020/epfo/subamraj.jpg"
+  },
+  {
+    "name": "VIGNESH PRABHU. S",
+    "rank": "22",
+    "year": 2020,
+    "service": "EPFO",
+    "district": "Coimbatore",
+    "photo": "assets/candidates/2020/epfo/vignesh.jpg"
+  },
+  {
+    "name": "Adam",
+    "rank": "IPS Rank-45",
+    "year": 2024,
+    "service": "UPSC civil service",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Tamara",
+    "rank": "TNPSC Rank-12",
+    "year": 2024,
+    "service": "EPFO",
+    "district": "Madurai"
+  },
+  {
+    "name": "Raj Kumar",
+    "rank": "IAS Rank-67",
+    "year": 2023,
+    "service": "UPSC civil service",
+    "district": "Trichy"
+  },
+  {
+    "name": "Priya Sharma",
+    "rank": "IPS Rank-89",
+    "year": 2023,
+    "service": "CAPF",
+    "district": "Salem"
+  },
+  {
+    "name": "Vikram Singh",
+    "rank": "TNPSC Rank-34",
+    "year": 2022,
+    "service": "IoFS",
+    "district": "Erode"
+  },
+  {
+    "name": "Sneha Patel",
+    "rank": "IAS Rank-56",
+    "year": 2024,
+    "service": "UPSC civil service",
+    "district": "Vellore"
+  },
+  {
+    "name": "Arjun Reddy",
+    "rank": "IPS Rank-78",
+    "year": 2024,
+    "service": "CAPF",
+    "district": "Tirunelveli"
+  }
+]
