@@ -124,6 +124,39 @@
   border-color: #20b2aa;
 }
 
+/* Service Filter */
+.service-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+  flex-wrap: wrap;
+}
+
+.service-button {
+  padding: 0.625rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  background: white;
+  color: #6b7280;
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.service-button:hover {
+  border-color: #20b2aa;
+  color: #20b2aa;
+}
+
+.service-button.active {
+  background: #20b2aa;
+  color: white;
+  border-color: #20b2aa;
+}
+
 /* Carousel Container */
 .carousel-container {
   display: flex;

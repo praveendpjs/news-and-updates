@@ -23,6 +23,25 @@
     </button>
   </div>
 
+  <!-- Service Filter -->
+  <div class="service-filter">
+    <button
+      class="service-button"
+      [class.active]="selectedService === 'All'"
+      (click)="selectService('All')"
+    >
+      All
+    </button>
+    <button
+      *ngFor="let service of services"
+      class="service-button"
+      [class.active]="service === selectedService"
+      (click)="selectService(service)"
+    >
+      {{ service }}
+    </button>
+  </div>
+
   <!-- Candidate Carousel -->
   <div class="carousel-container">
     <button
