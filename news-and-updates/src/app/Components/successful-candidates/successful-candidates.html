@@ -42,8 +42,42 @@
     </button>
   </div>
 
-  <!-- Candidate Carousel -->
-  <div class="carousel-container">
+  <!-- Candidate Table View (for candidates with photos) -->
+  <div class="table-container" *ngIf="showTableView">
+    <table class="candidates-table">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Native / District</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let candidate of allFilteredCandidates; let i = index"
+          [class.highlight]="i === 0 || i === 9"
+        >
+          <td class="sno-cell">{{ i + 1 }}</td>
+          <td class="photo-cell">
+            <div class="photo-wrapper">
+              <img
+                [src]="candidate.photo || 'assets/candidates/placeholder.jpg'"
+                [alt]="candidate.name"
+                class="candidate-photo"
+                (error)="$any($event.target).src = 'assets/candidates/placeholder.jpg'"
+              />
+            </div>
+          </td>
+          <td class="name-cell">{{ candidate.name }}</td>
+          <td class="district-cell">{{ candidate.district }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Candidate Carousel (for candidates without photos) -->
+  <div class="carousel-container" *ngIf="!showTableView">
     <button
       class="carousel-button prev"
       (click)="goPrevious()"
@@ -129,8 +163,8 @@
     </button>
   </div>
 
-  <!-- View More Button -->
-  <div class="view-more-container">
+  <!-- View More Button (only for carousel view) -->
+  <div class="view-more-container" *ngIf="!showTableView">
     <button class="view-more-button">View More Candidates</button>
   </div>
 </div>
