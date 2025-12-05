@@ -161,97 +161,27 @@
         <strong>Category:</strong> {{ selectedAnnouncement.category }}
       </div>
       
-      <div class="modal-full-content">
-        <p>{{ selectedAnnouncement.fullContent }}</p>
+      <!-- HTML Content Display -->
+      <div *ngIf="hasHtmlFile()" class="html-content-container">
+        <div *ngIf="isLoadingHtml" class="loading-indicator">
+          <div class="spinner"></div>
+          <p>Loading content...</p>
+        </div>
+        
+        <div *ngIf="htmlLoadError" class="error-message">
+          <p>{{ htmlLoadError }}</p>
+        </div>
+        
+        <div 
+          *ngIf="loadedHtmlContent && !isLoadingHtml && !htmlLoadError" 
+          class="html-content-wrapper"
+          [innerHTML]="loadedHtmlContent"
+        ></div>
       </div>
       
-      <!-- Document Pages Viewer -->
-      <div class="document-viewer-container" *ngIf="hasDocumentPages">
-        <div class="document-viewer-header">
-          <h3 class="document-viewer-title">Document Preview</h3>
-          <span class="page-counter" *ngIf="totalDocumentPages > 0">
-            Page {{ currentDocumentPage + 1 }} of {{ totalDocumentPages }}
-          </span>
-        </div>
-        
-        <div class="document-pages-wrapper">
-          <button
-            class="page-nav-btn prev-btn"
-            (click)="goToPreviousPage()"
-            [disabled]="!canGoToPreviousPage()"
-            [class.disabled]="!canGoToPreviousPage()"
-            aria-label="Previous page"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15 18L9 12L15 6"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          
-          <div class="document-page-container">
-            <img
-              [src]="currentPageImage"
-              [alt]="'Page ' + (currentDocumentPage + 1) + ' of ' + selectedAnnouncement?.title"
-              class="document-page-image"
-              (error)="onImageError($event)"
-              loading="lazy"
-            />
-          </div>
-          
-          <button
-            class="page-nav-btn next-btn"
-            (click)="goToNextPage()"
-            [disabled]="!canGoToNextPage()"
-            [class.disabled]="!canGoToNextPage()"
-            aria-label="Next page"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 18L15 12L9 6"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-        
-        <!-- Page Thumbnails -->
-        <div class="page-thumbnails" *ngIf="totalDocumentPages > 1">
-          <button
-            *ngFor="let page of documentPages; let i = index"
-            class="thumbnail-btn"
-            [class.active]="i === currentDocumentPage"
-            (click)="goToDocumentPage(i)"
-            [attr.aria-label]="'Go to page ' + (i + 1)"
-          >
-            <img
-              [src]="page"
-              [alt]="'Page ' + (i + 1) + ' thumbnail'"
-              class="thumbnail-image"
-              loading="lazy"
-            />
-            <span class="thumbnail-number">{{ i + 1 }}</span>
-          </button>
-        </div>
+      <!-- Fallback to text content if no HTML file -->
+      <div *ngIf="!hasHtmlFile()" class="modal-full-content">
+        <p>{{ selectedAnnouncement.fullContent }}</p>
       </div>
     </div>
   </div>

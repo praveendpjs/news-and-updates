@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import announcementsData from './announcements.json';
 
 interface Announcement {
@@ -11,8 +13,7 @@ interface Announcement {
   description: string;
   fullContent: string;
   isNew: boolean;
-  documentUrl?: string;
-  documentPages?: string[];
+  htmlFile?: string;
 }
 
 @Component({
@@ -22,19 +23,24 @@ interface Announcement {
   styleUrl: './academy-announcements.css',
 })
 export class AcademyAnnouncements {
+  private http = inject(HttpClient);
+  private sanitizer = inject(DomSanitizer);
+
   announcements: Announcement[] = announcementsData as Announcement[];
-  
+
   searchQuery: string = '';
   selectedCategory: string = 'All';
   sortOrder: 'newest' | 'oldest' = 'newest';
   currentPage: number = 1;
   itemsPerPage: number = 3;
-  
+
   selectedAnnouncement: Announcement | null = null;
   isModalOpen: boolean = false;
-  currentDocumentPage: number = 0;
+  loadedHtmlContent: SafeHtml | null = null;
+  isLoadingHtml: boolean = false;
+  htmlLoadError: string | null = null;
 
-  categories: string[] = ['All', 'Batch', 'Examination', 'Administration', 'Workshop', 'Resources'];
+  categories: string[] = ['All', 'Batch', 'Examination', 'Administration', 'Workshop', 'Resources', 'Results'];
 
   get filteredAnnouncements(): Announcement[] {
     let filtered = this.announcements;
@@ -100,70 +106,66 @@ export class AcademyAnnouncements {
     }
   }
 
-  goToDocumentPage(pageIndex: number): void {
-    if (pageIndex >= 0 && pageIndex < this.totalDocumentPages) {
-      this.currentDocumentPage = pageIndex;
-    }
-  }
-
   openModal(announcement: Announcement): void {
     this.selectedAnnouncement = announcement;
-    this.currentDocumentPage = 0;
     this.isModalOpen = true;
+    this.loadedHtmlContent = null;
+    this.htmlLoadError = null;
     document.body.style.overflow = 'hidden';
+
+    // Load HTML file if specified
+    if (announcement.htmlFile) {
+      this.loadHtmlFile(announcement.htmlFile);
+    }
   }
 
   closeModal(): void {
     this.isModalOpen = false;
     this.selectedAnnouncement = null;
-    this.currentDocumentPage = 0;
+    this.loadedHtmlContent = null;
+    this.htmlLoadError = null;
+    this.isLoadingHtml = false;
     document.body.style.overflow = '';
   }
 
-  get documentPages(): string[] {
-    return this.selectedAnnouncement?.documentPages || [];
+  loadHtmlFile(htmlFilePath: string): void {
+    this.isLoadingHtml = true;
+    this.htmlLoadError = null;
+
+    // Ensure the path starts with 'assets/' and has proper format
+    const filePath = htmlFilePath.startsWith('assets/')
+      ? htmlFilePath
+      : `assets/${htmlFilePath}`;
+
+    this.http.get(filePath, { responseType: 'text' }).subscribe({
+      next: (htmlContent: string) => {
+        // Extract body content if it's a full HTML document, otherwise use as-is
+        const bodyContent = this.extractBodyContent(htmlContent);
+        // Sanitize the HTML content for safe display
+        this.loadedHtmlContent = this.sanitizer.bypassSecurityTrustHtml(bodyContent);
+        this.isLoadingHtml = false;
+      },
+      error: (error) => {
+        console.error('Error loading HTML file:', error);
+        this.htmlLoadError = 'Failed to load content. Please try again later.';
+        this.isLoadingHtml = false;
+      }
+    });
   }
 
-  get hasDocumentPages(): boolean {
-    return this.documentPages.length > 0;
-  }
-
-  get totalDocumentPages(): number {
-    return this.documentPages.length;
-  }
-
-  get currentPageImage(): string | null {
-    if (this.documentPages.length === 0) {
-      return null;
+  private extractBodyContent(htmlContent: string): string {
+    // Check if the content contains a full HTML document structure
+    const bodyMatch = htmlContent.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+    if (bodyMatch && bodyMatch[1]) {
+      // Extract only the body content
+      return bodyMatch[1].trim();
     }
-    return this.documentPages[this.currentDocumentPage] || null;
+    // If no body tag found, return the content as-is (it might be just body content)
+    return htmlContent.trim();
   }
 
-  goToNextPage(): void {
-    if (this.currentDocumentPage < this.totalDocumentPages - 1) {
-      this.currentDocumentPage++;
-    }
-  }
-
-  goToPreviousPage(): void {
-    if (this.currentDocumentPage > 0) {
-      this.currentDocumentPage--;
-    }
-  }
-
-  canGoToNextPage(): boolean {
-    return this.currentDocumentPage < this.totalDocumentPages - 1;
-  }
-
-  canGoToPreviousPage(): boolean {
-    return this.currentDocumentPage > 0;
-  }
-
-
-  onImageError(event: Event): void {
-    const img = event.target as HTMLImageElement;
-    img.src = 'assets/documents/placeholder.jpg';
-    img.alt = 'Image not available';
+  hasHtmlFile(): boolean {
+    return !!this.selectedAnnouncement?.htmlFile;
   }
 
   formatDate(dateString: string): string {

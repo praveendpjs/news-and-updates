@@ -1,58 +1,48 @@
 [
   {
     "id": 1,
-    "title": "UPSC New Batch Launch",
-    "date": "2025-11-12",
-    "category": "Batch",
-    "description": "Our new UPSC batch is starting with top faculty.",
+    "title": "UPSC Preliminary result news",
+    "date": "2025-06-12",
+    "category": "Results",
+    "description": "Our new UPSC students have scored brightly.",
     "fullContent": "We are excited to announce the launch of our new UPSC batch. This batch will feature our top-rated faculty members with years of experience. Classes will commence from next week with a comprehensive curriculum covering all subjects.",
     "isNew": true,
-    "documentUrl": "assets/documents/UPSC 2025-26 PRELIMINARY Result News.docx",
-    "documentPages": [
-      "assets/documents/pages/upsc-2025-26-page-1.jpg",
-      "assets/documents/pages/upsc-2025-26-page-2.jpg",
-      "assets/documents/pages/upsc-2025-26-page-3.jpg"
-    ]
+    "htmlFile": "assets/announcements/upsc-batch-launch.html"
   },
   {
     "id": 2,
     "title": "Scholarship Test",
-    "date": "2025-11-10",
+    "date": "2024-11-10",
     "category": "Examination",
     "description": "Scholarship exam for all batches.",
     "fullContent": "We are conducting a scholarship test for all students across different batches. The examination will test your knowledge in current affairs, general studies, and optional subjects. Winners will receive up to 50% scholarship on course fees.",
-    "isNew": false,
-    "documentUrl": "assets/documents/scholarship-test.docx"
+    "isNew": false
   },
   {
     "id": 3,
     "title": "Hostel Allotment",
-    "date": "2025-11-05",
+    "date": "2024-11-05",
     "category": "Administration",
     "description": "Hostel allotment started.",
     "fullContent": "Hostel allotment for the upcoming academic year has begun. Students can apply online through our portal. Priority will be given to outstation students. Please submit your applications before the deadline.",
-    "isNew": false,
-    "documentUrl": "assets/documents/hostel-allotment.docx"
+    "isNew": false
   },
   {
     "id": 4,
     "title": "Faculty Workshop",
-    "date": "2025-10-28",
+    "date": "2024-10-28",
     "category": "Workshop",
     "description": "Special workshop on current affairs preparation.",
     "fullContent": "Join us for a comprehensive workshop on current affairs preparation. Our expert faculty will share strategies, resources, and tips for effective preparation. The workshop is open to all enrolled students.",
-    "isNew": false,
-    "documentUrl": "assets/documents/faculty-workshop.docx"
+    "isNew": false
   },
   {
     "id": 5,
     "title": "Study Material Update",
-    "date": "2025-10-20",
+    "date": "2024-10-20",
     "category": "Resources",
     "description": "Updated study materials available for download.",
     "fullContent": "New and updated study materials have been uploaded to the student portal. These include revised notes, practice papers, and previous year question papers with detailed solutions. Log in to access these resources.",
-    "isNew": false,
-    "documentUrl": "assets/documents/study-material-update.docx"
+    "isNew": false
   }
 ]
-
