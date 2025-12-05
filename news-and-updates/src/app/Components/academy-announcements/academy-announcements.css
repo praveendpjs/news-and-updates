@@ -228,7 +228,7 @@
 .modal-content {
   background: white;
   border-radius: 1rem;
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
   max-height: 90vh;
   overflow: hidden;
@@ -271,6 +271,40 @@
 .modal-close:hover {
   background: #e5e7eb;
   color: #111827;
+}
+
+.language-toggle-btn {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid #20b2aa;
+  background: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+  color: #20b2aa;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.language-toggle-btn:hover {
+  background: #20b2aa;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.language-toggle-btn:active {
+  transform: translateY(0);
+}
+
+.language-toggle-btn svg {
+  flex-shrink: 0;
 }
 
 .modal-body {
@@ -522,6 +556,18 @@
 
   .modal-title {
     font-size: 1.5rem;
+  }
+
+  .language-toggle-btn {
+    top: 0.75rem;
+    right: 3.5rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  .language-toggle-btn svg {
+    width: 16px;
+    height: 16px;
   }
 }
 

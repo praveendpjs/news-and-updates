@@ -1,7 +1,7 @@
 <div class="announcements-page">
   <!-- Header -->
   <div class="page-header">
-    <h1 class="page-title">News and Updates</h1>
+    <h1 class="page-title">Academy announcements </h1>
   </div>
 
   <!-- Filters and Search Section -->
@@ -15,7 +15,7 @@
         (input)="onSearchChange()"
       />
     </div>
-    
+
     <div class="filter-container">
       <select
         class="filter-select"
@@ -27,7 +27,7 @@
         </option>
       </select>
     </div>
-    
+
     <div class="sort-container">
       <select
         class="filter-select"
@@ -50,7 +50,7 @@
         <h3 class="card-title">{{ announcement.title }}</h3>
         <span class="new-badge" *ngIf="announcement.isNew">NEW</span>
       </div>
-      
+
       <div class="card-date">
         <svg
           width="16"
@@ -79,9 +79,9 @@
         </svg>
         <span>{{ formatDate(announcement.date) }}</span>
       </div>
-      
+
       <p class="card-description">{{ announcement.description }}</p>
-      
+
       <button class="view-more-btn" (click)="openModal(announcement)">
         View More →
       </button>
@@ -121,13 +121,46 @@
         />
       </svg>
     </button>
-    
+
+    <!-- Language Toggle Button -->
+    <button
+      *ngIf="canToggleLanguage()"
+      class="language-toggle-btn"
+      (click)="toggleLanguage()"
+      [attr.aria-label]="currentLanguage === 'default' ? 'Switch to English' : 'Switch to Tamil'"
+      [attr.title]="currentLanguage === 'default' ? 'Switch to English' : 'Switch to Tamil'"
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 18.3333C14.6024 18.3333 18.3333 14.6024 18.3333 9.99996C18.3333 5.39759 14.6024 1.66663 10 1.66663C5.39763 1.66663 1.66667 5.39759 1.66667 9.99996C1.66667 14.6024 5.39763 18.3333 10 18.3333Z"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6.66667 10H13.3333M10 6.66663L13.3333 9.99996L10 13.3333"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <span>{{ currentLanguage === 'default' ? 'English' : 'தமிழ்' }}</span>
+    </button>
+
     <div class="modal-body" *ngIf="selectedAnnouncement">
       <div class="modal-header">
         <h2 class="modal-title">{{ selectedAnnouncement.title }}</h2>
         <span class="new-badge" *ngIf="selectedAnnouncement.isNew">NEW</span>
       </div>
-      
+
       <div class="modal-date">
         <svg
           width="16"
@@ -156,29 +189,29 @@
         </svg>
         <span>{{ formatDate(selectedAnnouncement.date) }}</span>
       </div>
-      
+
       <div class="modal-category">
         <strong>Category:</strong> {{ selectedAnnouncement.category }}
       </div>
-      
+
       <!-- HTML Content Display -->
       <div *ngIf="hasHtmlFile()" class="html-content-container">
         <div *ngIf="isLoadingHtml" class="loading-indicator">
           <div class="spinner"></div>
           <p>Loading content...</p>
         </div>
-        
+
         <div *ngIf="htmlLoadError" class="error-message">
           <p>{{ htmlLoadError }}</p>
         </div>
-        
-        <div 
-          *ngIf="loadedHtmlContent && !isLoadingHtml && !htmlLoadError" 
+
+        <div
+          *ngIf="loadedHtmlContent && !isLoadingHtml && !htmlLoadError"
           class="html-content-wrapper"
           [innerHTML]="loadedHtmlContent"
         ></div>
       </div>
-      
+
       <!-- Fallback to text content if no HTML file -->
       <div *ngIf="!hasHtmlFile()" class="modal-full-content">
         <p>{{ selectedAnnouncement.fullContent }}</p>

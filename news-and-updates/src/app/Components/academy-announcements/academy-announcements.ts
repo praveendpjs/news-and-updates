@@ -14,6 +14,7 @@ interface Announcement {
   fullContent: string;
   isNew: boolean;
   htmlFile?: string;
+  htmlFileEn?: string;
 }
 
 @Component({
@@ -39,8 +40,9 @@ export class AcademyAnnouncements {
   loadedHtmlContent: SafeHtml | null = null;
   isLoadingHtml: boolean = false;
   htmlLoadError: string | null = null;
+  currentLanguage: 'default' | 'en' = 'default';
 
-  categories: string[] = ['All', 'Batch', 'Examination', 'Administration', 'Workshop', 'Resources', 'Results'];
+  categories: string[] = ['All', 'Batch', 'Examination', 'Administration', 'Stipend', 'Resources', 'Results'];
 
   get filteredAnnouncements(): Announcement[] {
     let filtered = this.announcements;
@@ -111,9 +113,10 @@ export class AcademyAnnouncements {
     this.isModalOpen = true;
     this.loadedHtmlContent = null;
     this.htmlLoadError = null;
+    this.currentLanguage = 'default';
     document.body.style.overflow = 'hidden';
 
-    // Load HTML file if specified
+    // Load HTML file if specified (default language)
     if (announcement.htmlFile) {
       this.loadHtmlFile(announcement.htmlFile);
     }
@@ -125,6 +128,7 @@ export class AcademyAnnouncements {
     this.loadedHtmlContent = null;
     this.htmlLoadError = null;
     this.isLoadingHtml = false;
+    this.currentLanguage = 'default';
     document.body.style.overflow = '';
   }
 
@@ -165,7 +169,30 @@ export class AcademyAnnouncements {
   }
 
   hasHtmlFile(): boolean {
-    return !!this.selectedAnnouncement?.htmlFile;
+    return !!this.selectedAnnouncement?.htmlFile || !!this.selectedAnnouncement?.htmlFileEn;
+  }
+
+  toggleLanguage(): void {
+    if (!this.selectedAnnouncement) return;
+
+    if (this.currentLanguage === 'default') {
+      // Switch to English
+      if (this.selectedAnnouncement.htmlFileEn) {
+        this.currentLanguage = 'en';
+        this.loadHtmlFile(this.selectedAnnouncement.htmlFileEn);
+      }
+    } else {
+      // Switch back to default
+      if (this.selectedAnnouncement.htmlFile) {
+        this.currentLanguage = 'default';
+        this.loadHtmlFile(this.selectedAnnouncement.htmlFile);
+      }
+    }
+  }
+
+  canToggleLanguage(): boolean {
+    if (!this.selectedAnnouncement) return false;
+    return !!(this.selectedAnnouncement.htmlFile && this.selectedAnnouncement.htmlFileEn);
   }
 
   formatDate(dateString: string): string {

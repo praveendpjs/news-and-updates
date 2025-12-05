@@ -6,7 +6,7 @@ interface Candidate {
   name: string;
   rank: string;
   year: number;
-  service: 'IFOS' | 'EPFO' | 'CAPF' | 'UPSC civil service';
+  service: 'IFOS' | 'EPFO' | 'CAPF' | 'IPS' | 'IAS' | 'IRS'| 'IFS' | 'IIS' | 'ICLS' | 'IDAS' | 'IRMS' | 'IPOS';
   photo?: string;
   district: string;
 }
@@ -18,16 +18,25 @@ interface Candidate {
   styleUrl: './successful-candidates.css',
 })
 export class SuccessfulCandidates {
-  years: number[] = [2024, 2023, 2022, 2008, 2020, 2010, 2013, 2014, 2016, 2017, 2018, 2011].sort((a, b) => b - a);
+  years: number[] = [2024, 2023, 2022, 2008, 2020, 2010, 2013, 2014, 2016, 2017, 2018, 2011, 2007].sort((a, b) => b - a);
   selectedYear: number = 2024;
 
-  services: ('IFOS' | 'EPFO' | 'CAPF' | 'UPSC')[] = [
+  services: ('IFOS' | 'EPFO' | 'CAPF' | 'IPS' | 'IAS' | 'IRS' | 'IFS' | 'IIS' | 'ICLS' | 'IDAS' | 'IRMS' | 'ICAS' | 'IPOS')[] = [
     'IFOS',
     'EPFO',
     'CAPF',
-    'UPSC',
+    'IPS',
+    'IAS',
+    'IRS',
+    'IFS',
+    'IIS',
+    'ICLS',
+    'IDAS',
+    'IRMS',
+    'ICAS',
+    'IPOS'
   ];
-  selectedService: 'IFOS' | 'EPFO' | 'CAPF' | 'UPSC' | 'All' = 'All';
+  selectedService: 'IFOS' | 'EPFO' | 'CAPF' | 'IPS' | 'IAS' | 'IRS' | 'IFS' |'IIS'| 'ICLS' | 'IDAS' | 'IRMS'| 'ICAS' | 'IPOS' | 'All' = 'All';
 
   candidates: Candidate[] = candidatesData as Candidate[];
 
@@ -39,7 +48,7 @@ export class SuccessfulCandidates {
     this.currentCarouselIndex = 0;
   }
 
-  selectService(service: 'IFOS' | 'EPFO' | 'CAPF' | 'UPSC' | 'All'): void {
+  selectService(service: 'IFOS' | 'EPFO' | 'CAPF'  | 'IPS' | 'IAS' | 'IRS' | 'IFS' | 'IIS' | 'ICLS'| 'IDAS' | 'IRMS' | 'ICAS' | 'IPOS' | 'All'): void {
     this.selectedService = service;
     this.currentCarouselIndex = 0;
   }

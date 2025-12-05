@@ -1,48 +1,142 @@
 [
   {
     "id": 1,
-    "title": "UPSC Preliminary result news",
+    "title": "UPSC Prelims 2025–26 – 71 Manidhanaeyam Students Qualified",
     "date": "2025-06-12",
     "category": "Results",
-    "description": "Our new UPSC students have scored brightly.",
-    "fullContent": "We are excited to announce the launch of our new UPSC batch. This batch will feature our top-rated faculty members with years of experience. Classes will commence from next week with a comprehensive curriculum covering all subjects.",
-    "isNew": true,
-    "htmlFile": "assets/announcements/upsc-batch-launch.html"
+    "description": "A total of 71 students trained at Manidhanaeyam Foundation have successfully cleared the UPSC Civil Services Preliminary Examination 2025–26. Free hostel accommodation, food, and full coaching support will be provided for Main Examination preparation.",
+    "isNew": false,
+    "htmlFile": "assets/announcements/upsc_batch_launch.html",
+    "htmlFileEn": "assets/announcements/upsc_batch_launch_en.html"
   },
   {
     "id": 2,
-    "title": "Scholarship Test",
-    "date": "2024-11-10",
-    "category": "Examination",
-    "description": "Scholarship exam for all batches.",
-    "fullContent": "We are conducting a scholarship test for all students across different batches. The examination will test your knowledge in current affairs, general studies, and optional subjects. Winners will receive up to 50% scholarship on course fees.",
-    "isNew": false
+    "title": "TNPSC Group IV Result 2025 – 232 Manidhanaeyam Students Selected",
+    "date": "2025-10-24",
+    "category": "Results",
+    "description": "Over 232 students trained by Manidhanaeyam Foundation have secured high scores in the TNPSC Group IV Examination 2025 and are expected to receive government job postings through the upcoming counseling process.",
+    "isNew": false,
+    "htmlFile": "assets/announcements/tnpscgr4res_tn.html",
+    "htmlFileEn": "assets/announcements/tnpscgr4res_en.html"
   },
   {
     "id": 3,
-    "title": "Hostel Allotment",
-    "date": "2024-11-05",
-    "category": "Administration",
-    "description": "Hostel allotment started.",
-    "fullContent": "Hostel allotment for the upcoming academic year has begun. Students can apply online through our portal. Priority will be given to outstation students. Please submit your applications before the deadline.",
+    "title": "TNPSC Group I Prelims Result 2025–26 – 67 Manidhanaeyam Students Qualified",
+    "date": "2025-08-28",
+    "category": "Results",
+    "description": "A total of 67 students trained by Manidhanaeyam Foundation have successfully cleared the TNPSC Group I Preliminary Examination 2025–26 and are now eligible for Main Examination coaching with financial support.",
+    "htmlFile": "assets/announcements/tnpsc_group1_prelims_tn.html",
+    "htmlFileEn": "assets/announcements/tnpsc_group1_prelims_en.html",
     "isNew": false
   },
   {
     "id": 4,
-    "title": "Faculty Workshop",
-    "date": "2024-10-28",
-    "category": "Workshop",
-    "description": "Special workshop on current affairs preparation.",
-    "fullContent": "Join us for a comprehensive workshop on current affairs preparation. Our expert faculty will share strategies, resources, and tips for effective preparation. The workshop is open to all enrolled students.",
+    "title": "UPSC Civil Services 2024–25 – 31 Manidhanaeyam Students Get Service Allocation",
+    "date": "2025-08-06",
+    "category": "Results",
+    "description": "Out of 35 students trained at Manidhanaeyam Free IAS Academy, 31 candidates have received UPSC service allocations in IAS, IPS, IFS, IRS, IRMS, IIS and other central services in the 2024–25 Civil Services Examination.",
+    "htmlFile": "assets/announcements/upsc_2024_25_service_allocation_tn.html",
+    "htmlFileEn": "assets/announcements/upsc_2024_25_service_allocation_en.html",
     "isNew": false
   },
   {
     "id": 5,
-    "title": "Study Material Update",
-    "date": "2024-10-20",
-    "category": "Resources",
-    "description": "Updated study materials available for download.",
-    "fullContent": "New and updated study materials have been uploaded to the student portal. These include revised notes, practice papers, and previous year question papers with detailed solutions. Log in to access these resources.",
+    "title": "TNPSC Group I 2025–26 – Stipend Distributed to 525+ Manidhanaeyam Students",
+    "date": "2025-10-29",
+    "category": "Stipend",
+    "description": "Out of 35 students trained at Manidhanaeyam Free IAS Academy, 31 candidates have received UPSC service allocations in IAS, IPS, IFS, IRS, IRMS, IIS and other central services in the 2024–25 Civil Services Examination.",
+    "htmlFile": "assets/announcements/tnpsc_group1_stipend_tn",
+    "htmlFileEn": "assets/announcements/tnpsc_group1_stipend_en",
+    "isNew": false
+  },
+  {
+    "id": 6,
+    "title": "UPSC Mains 2025 – ₹15,000 Stipend Distributed to 340+ Manidhanaeyam Students",
+    "date": "2025-07-16",
+    "category": "Stipend",
+    "description": "More than 340 students appearing for the UPSC Main Examination 2025 received a stipend of ₹15,000 each from the Manidhanaeyam Foundation, along with guidance on time management, physical health and mental well-being.",
+    "htmlFile": "assets/announcements/upsc_mains_stipend_tn",
+    "htmlFileEn": "assets/announcements/upsc_mains_stipend_en",
+    "isNew": false
+  },
+  {
+    "id": 7,
+    "title": "Free Civil Judge & District Judge Prelims Coaching 2025–26",
+    "date": "2025-08-16",
+    "category": "Batch",
+    "description": "The Tamil Nadu and Puducherry Bar Council, in association with Manidhanaeyam Free IAS Academy, has launched free preliminary coaching for Civil Judge and District Judge aspirants for the 2025–26 examinations.",
+    "htmlFile": "assets/announcements/civil_district_judge_coaching_tn",
+    "htmlFileEn": "assets/announcements/civil_district_judge_coaching_en",
+    "isNew": false
+  },
+  {
+    "id": 8,
+    "title": "TNPSC Group I Mains Result 2024–25 – 17 Manidhanaeyam Students Qualified",
+    "date": "2025-03-14",
+    "category": "Results",
+    "description": "A total of 17 students trained at Manidhanaeyam Free IAS Academy have successfully cleared the TNPSC Group I Main Examination 2024–25 and will receive free mock interview training and current affairs preparation support.",
+    "htmlFile": "assets/announcements/tnpsc_group1_mains_2024_25_tn",
+    "htmlFileEn": "assets/announcements/tnpsc_group1_mains_2024_25_en",
+    "isNew": false
+  },
+    {
+    "id": 9,
+    "title": "UPSC CAPF 2024–25 – 8 Manidhanaeyam Students Clear Final Interview",
+    "date": "2025-06-14",
+    "category": "Results",
+    "description": "Eight students trained at Manidhanaeyam Free IAS Academy have successfully cleared the UPSC CAPF Assistant Commandant Final Interview 2024–25, with top All India Ranks including 69, 96, and 120.",
+    "htmlFile": "assets/announcements/capf_2024_25_interview_tn",
+    "htmlFileEn": "assets/announcements/capf_2024_25_interview_en",
+    "isNew": false
+  },
+  {
+    "id": 10,
+    "title": "TNPSC APP Grade-II Main Result 2025 – 22 Advocates Qualified",
+    "date": "2025-11-18",
+    "category": "Results",
+    "description": "A total of 22 advocates have successfully cleared the TNPSC Assistant Public Prosecutor Grade-II Main Examination 2025 and will receive free mock interview training jointly conducted by the Tamil Nadu & Puducherry Bar Council and Manidhanaeyam Foundation.",
+    "htmlFile": "assets/announcements/app_grade2_mains_2025_tn",
+    "htmlFileEn": "assets/announcements/app_grade2_mains_2025_en",
+    "isNew": false
+  },
+    {
+    "id": 11,
+    "title": "TNPSC APP Grade-II Prelims 2024–25 – 34 Candidates Qualified",
+    "date": "2025-04-26",
+    "category": "Results",
+    "description": "A total of 34 candidates have successfully cleared the TNPSC Assistant Public Prosecutor Grade-II Preliminary Examination 2024–25 and are now eligible for free Main Examination coaching conducted jointly by the Bar Council and Manidhanaeyam Foundation.",
+    "htmlFile": "assets/announcements/app_grade2_prelims_2024_25_tn",
+    "htmlFileEn": "assets/announcements/app_grade2_prelims_2024_25_en",
+    "isNew": false
+  },
+  {
+    "id": 12,
+    "title": "UPSC Main Result 2025 – 93 Manidhanaeyam Students Qualified",
+    "date": "2025-11-12",
+    "category": "Results",
+    "description": "A total of 93 students trained at Manidhanaeyam Free IAS Academy (63 men and 30 women) have successfully cleared the UPSC Civil Services Main Examination 2025 and are now eligible for free interview training with full logistical support.",
+    "htmlFile": "assets/announcements/upsc_main_2025_tn",
+    "htmlFileEn": "assets/announcements/upsc_main_2025_en",
+    "isNew": false
+  },
+  {
+    "id": 13,
+    "title": "UPSC Interview Result 2024–25 – 35 Manidhanaeyam Students Selected",
+    "date": "2025-04-22",
+    "category": "Results",
+    "description": "A total of 35 students trained at Manidhanaeyam Free IAS Academy have successfully cleared the UPSC Civil Services Interview 2024–25, including top All India Ranks 23, 39 and 52.",
+    "htmlFile": "assets/announcements/upsc_interview_2024_25_tn",
+    "htmlFileEn": "assets/announcements/upsc_interview_2024_25_en",
+    "isNew": false
+  },
+  {
+    "id": 14,
+    "title": "UPSC IFoS 2024–25 – 3 Manidhanaeyam Students Clear Final Interview",
+    "date": "2025-05-20",
+    "category": "Results",
+    "description": "Three students trained at Manidhanaeyam Free IAS Academy have successfully cleared the UPSC Indian Forest Service (IFoS) Interview 2024–25 with All India Ranks 88, 110 and 125.",
+    "htmlFile": "assets/announcements/upsc_ifos_2024_25_tn",
+    "htmlFileEn": "assets/announcements/upsc_ifos_2024_25_en",
     "isNew": false
   }
 ]

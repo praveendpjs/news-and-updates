@@ -68,3 +68,5 @@ The HTML content will inherit styles from the modal component. You can use inlin
 - Keep file sizes reasonable for better performance
 - Ensure all paths (images, links) are relative or absolute URLs
 
+
+
