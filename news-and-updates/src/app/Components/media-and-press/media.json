@@ -2,59 +2,244 @@
   {
     "id": 1,
     "type": "article",
-    "title": "Academy Celebrates Record Breaking UPSC Results",
-    "newspaper": "The Hindu",
-    "date": "2024-11-15",
-    "imageUrl": "assets/media/articles/article1.jpg",
-    "articleUrl": "https://example.com/article1",
-    "excerpt": "The academy has achieved remarkable success with over 50 students clearing the UPSC examinations this year."
+    "title": "TNPSC Financial Officer Exam: 3 Candidates from Manithaneyam Training Center Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-02-15",
+    "imageUrl": "assets/media/articles/tnpsc-financial-officer-feb-2025.jpg",
+    "excerpt": "In the TNPSC conducted Financial Officer post exam, 3 people who studied at Saidai Duraisamy Manithaneyam training center succeeded. V. Manikandan secured 1st rank, A. Kishore secured 3rd rank, and Ajith Kumar secured 4th rank at state level."
   },
   {
     "id": 2,
-    "type": "video",
-    "title": "Success Stories: Our UPSC Toppers Share Their Journey",
-    "description": "Watch our successful candidates share their preparation strategies and experiences.",
-    "date": "2024-11-10",
-    "youtubeVideoId": "dQw4w9WgXcQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    "type": "article",
+    "title": "Indian Forest Service Exam Results: 3 Candidates from Manithaneyam Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-05-21",
+    "imageUrl": "assets/media/articles/ifs-results-may-2025.jpg",
+    "excerpt": "143 candidates selected nationwide. J.P. Bisha secured 88th rank at All India level. P. Blessy Sreejil (110th rank) and P. Arun Srinivas (125th rank) from Chennai also succeeded after training at Manithaneyam."
   },
   {
     "id": 3,
     "type": "article",
-    "title": "New Batch Launch for Civil Services Preparation",
-    "newspaper": "The Times of India",
-    "date": "2024-11-08",
-    "imageUrl": "assets/media/articles/article2.jpg",
-    "articleUrl": "https://example.com/article2",
-    "excerpt": "The academy announces a new batch with updated curriculum and expert faculty members."
+    "title": "22 Lawyers Pass Assistant Public Prosecutor Exam After Manithaneyam Training",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-11-19",
+    "imageUrl": "assets/media/articles/app-exam-nov-2025.jpg",
+    "excerpt": "22 lawyers who received training at the Manithaneyam IAS Free Education Academy have successfully passed the preliminary examination for Assistant Public Prosecutor Grade-2."
   },
   {
     "id": 4,
-    "type": "video",
-    "title": "Academy Faculty Interview: Teaching Methodology",
-    "description": "Our expert faculty members discuss their teaching approach and success strategies.",
-    "date": "2024-11-05",
-    "youtubeVideoId": "dQw4w9WgXcQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    "type": "article",
+    "title": "UPSC Civil Services Main Exam: Free Lunch Provided to Candidates",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-08-24",
+    "imageUrl": "assets/media/articles/upsc-lunch-aug-2025.jpg",
+    "excerpt": "Free lunch was provided to UPSC Main Exam candidates on behalf of Manithaneyam Charitable Trust Chairman Saidai Duraisamy. The exam is being held for 5 days."
   },
   {
     "id": 5,
     "type": "article",
-    "title": "Scholarship Program for Meritorious Students",
-    "newspaper": "Deccan Chronicle",
-    "date": "2024-11-01",
-    "imageUrl": "assets/media/articles/article3.jpg",
-    "articleUrl": "https://example.com/article3",
-    "excerpt": "The academy introduces a new scholarship program offering up to 50% fee waiver for deserving students."
+    "title": "Group-1 State Level First Rank: K. Kathirselvi from Manithaneyam",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-03-15",
+    "imageUrl": "assets/media/articles/group1-first-rank-mar-2025.jpg",
+    "excerpt": "K. Kathirselvi from Cuddalore district, who studied at Manithaneyam Coaching Centre, secured the state-level first rank in the Group-1 examination conducted by TNPSC."
   },
   {
     "id": 6,
-    "type": "video",
-    "title": "Campus Tour: Facilities and Infrastructure",
-    "description": "Take a virtual tour of our state-of-the-art campus facilities and learning environment.",
-    "date": "2024-10-28",
-    "youtubeVideoId": "dQw4w9WgXcQ",
-    "thumbnailUrl": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    "type": "article",
+    "title": "Group-1 Candidates Receive Educational Assistance from Manithaneyam",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-10-17",
+    "imageUrl": "assets/media/articles/group1-assistance-oct-2025.jpg",
+    "excerpt": "525 or more Group-1 primary exam candidates received a scholarship of 10,000 rupees each. The aid was distributed by Saidai Duraisamy and former DGP Alexander."
+  },
+  {
+    "id": 7,
+    "type": "article",
+    "title": "CAPF Assistant Commandant Exam: 8 Candidates from Manithaneyam Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-06-15",
+    "imageUrl": "assets/media/articles/capf-results-jun-2025.jpg",
+    "excerpt": "8 candidates who trained at Saidai Duraisamy's Manithaneyam training center successfully cleared the exam. Aravind Aishwaryankutty from Kerala secured 69th rank nationally."
+  },
+  {
+    "id": 8,
+    "type": "article",
+    "title": "Group-1, 1A Preliminary Exam Results: 67 Candidates from Manithaneyam Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-08-29",
+    "imageUrl": "assets/media/articles/group1-prelims-aug-2025.jpg",
+    "excerpt": "67 people who studied at Manithaneyam Coaching Center passed the preliminary exam and are eligible for the main exam. 37 women and 30 men succeeded."
+  },
+  {
+    "id": 9,
+    "type": "article",
+    "title": "UPSC Candidates Receive Food Assistance from Manithaneyam",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-08-24",
+    "imageUrl": "assets/media/articles/upsc-food-aug-2025.jpg",
+    "excerpt": "Free lunch was provided to students participating in the UPSC Main Exam by former Chennai Mayor Saidai Duraisamy's Manithaneyam Free IAS Academy."
+  },
+  {
+    "id": 10,
+    "type": "article",
+    "title": "UPSC Civil Services Preliminary Exam: 71 Candidates from Manithaneyam Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-06-13",
+    "imageUrl": "assets/media/articles/upsc-prelims-jun-2025.jpg",
+    "excerpt": "71 candidates who studied at Saidai Duraisamy's Manithaneyam Centre succeeded in the Civil Services Preliminary Exam. 57 men and 14 women cleared the exam."
+  },
+  {
+    "id": 11,
+    "type": "article",
+    "title": "31 Civil Services Appointments: Including 9 IAS Posts from Manithaneyam",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-08-07",
+    "imageUrl": "assets/media/articles/civil-services-appointments-aug-2025.jpg",
+    "excerpt": "31 individuals have been appointed to civil service positions, including 9 IAS, 1 IFS, 2 IPS, 9 IRS, and other services after training at Manithaneyam Training Centre."
+  },
+  {
+    "id": 12,
+    "type": "article",
+    "title": "Civil Services Interview Results: 35 Candidates from Manithaneyam Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-04-23",
+    "imageUrl": "assets/media/articles/upsc-interview-apr-2025.jpg",
+    "excerpt": "35 people who studied at Saidai Duraisamy's Manithaneyam Centre succeeded in the Civil Services interview. 23 men and 12 women were successful."
+  },
+  {
+    "id": 13,
+    "type": "article",
+    "title": "Government Assistant Criminal Lawyer Exam: 22 Candidates from Manithaneyam Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-11-19",
+    "imageUrl": "assets/media/articles/app-main-nov-2025.jpg",
+    "excerpt": "22 individuals who trained with the Tamil Nadu and Puducherry Bar Council and Manithaneyam IAS Free Education Institute for the Government Assistant Criminal Lawyer Grade-2 main exam have succeeded."
+  },
+  {
+    "id": 14,
+    "type": "article",
+    "title": "Group-1 Main Exam: Educational Assistance for 525 Candidates",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-10-30",
+    "imageUrl": "assets/media/articles/group1-main-assistance-oct-2025.jpg",
+    "excerpt": "Educational scholarship of Rs. 10,000 each provided to 525 candidates registered and studying at the Manithaneyam Training Center for the Group-1 Main Examination."
+  },
+  {
+    "id": 15,
+    "type": "article",
+    "title": "Group-1 Main Exam Results: 24 Candidates from Manithaneyam Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-03-15",
+    "imageUrl": "assets/media/articles/group1-main-results-mar-2025.jpg",
+    "excerpt": "24 people who studied at Manithaneyam Training Center succeeded in the Group-1 Main Exam. 10 women and 14 men were successful."
+  },
+  {
+    "id": 16,
+    "type": "article",
+    "title": "Government Assistant Criminal Lawyer Preliminary Exam: 34 Candidates Succeed",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-04-27",
+    "imageUrl": "assets/media/articles/app-prelims-apr-2025.jpg",
+    "excerpt": "34 students who attended training classes conducted jointly by the Bar Council and Manithaneya Maiyam have passed the first-stage examination for Government Assistant Criminal Lawyer posts."
+  },
+  {
+    "id": 17,
+    "type": "article",
+    "title": "AIADMK Foundation Day: Saidai Duraisamy's Speech on M.G.R.'s Legacy",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-10-17",
+    "imageUrl": "assets/media/articles/aiadmk-foundation-oct-2025.jpg",
+    "excerpt": "Former Chennai Mayor Saidai Duraisamy writes about the formation of AIADMK on October 17, 1972, and M.G.R.'s principles of honest service politics."
+  },
+  {
+    "id": 18,
+    "type": "article",
+    "title": "Civil and District Judge Preliminary Exam: Free Training Offered",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-08-17",
+    "imageUrl": "assets/media/articles/judge-training-aug-2025.jpg",
+    "excerpt": "Manithaneya Maiyam Charitable Trust, in association with the Tamil Nadu and Puducherry Bar Councils, is conducting free training classes for the preliminary examination for civil and district judge positions."
+  },
+  {
+    "id": 19,
+    "type": "article",
+    "title": "UPSC Preliminary Exam: 71 Students from Manithaneyam Succeed",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-06-13",
+    "imageUrl": "assets/media/articles/upsc-prelims-dinamalar-jun-2025.jpg",
+    "excerpt": "Out of those who trained at the Manithaneyam IAS Free Education Centre, 57 male students and 14 female students, totaling 71 people, have cleared the UPSC preliminary exam."
+  },
+  {
+    "id": 20,
+    "type": "article",
+    "title": "UPSC Candidates Receive Financial Assistance from Manithaneyam",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-07-17",
+    "imageUrl": "assets/media/articles/upsc-assistance-jul-2025.jpg",
+    "excerpt": "Saidai Duraisamy's Manithaneya Charitable Trust provided financial aid to over 340 candidates who wrote the UPSC preliminary examination. Each candidate received 15,000 rupees."
+  },
+  {
+    "id": 21,
+    "type": "article",
+    "title": "Group-4 Exam Results: 232 Candidates from Manithaneyam Score High Marks",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-10-25",
+    "imageUrl": "assets/media/articles/group4-results-oct-2025.jpg",
+    "excerpt": "Over 232 students who trained through the Manithaneya Charitable Trust scored high marks and have a chance to secure jobs through reservation in the Group-4 exam."
+  },
+  {
+    "id": 22,
+    "type": "article",
+    "title": "Group-1 Candidates: Speech on Honest Officers with Humanitarian Values",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-11-02",
+    "imageUrl": "assets/media/articles/group1-speech-nov-2025.jpg",
+    "excerpt": "Saidai Duraisamy addresses Group-1 candidates, emphasizing the need for honest officers without corruption, with humanitarian thoughts and qualities."
+  },
+  {
+    "id": 23,
+    "type": "article",
+    "title": "UPSC Main Exam Candidates Receive Financial Assistance",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-07-17",
+    "imageUrl": "assets/media/articles/upsc-main-assistance-jul-2025.jpg",
+    "excerpt": "Retired Police Head Alexander and Saidai Duraisamy each provided 15,000 rupees to 340 candidates who qualified for the UPSC main exam."
+  },
+  {
+    "id": 24,
+    "type": "article",
+    "title": "Civil and District Judge Training: Free Coaching Classes Announced",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-08-17",
+    "imageUrl": "assets/media/articles/judge-coaching-dinamalar-aug-2025.jpg",
+    "excerpt": "Manithaneyam IAS Free Education Academy will provide free coaching for the preliminary exams of Civil Judge (TNPSC) and District Judge (High Court)."
+  },
+  {
+    "id": 25,
+    "type": "article",
+    "title": "AMET University Foundation Day: 83 Teachers Honored",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-02-16",
+    "imageUrl": "assets/media/articles/amet-foundation-feb-2025.jpg",
+    "excerpt": "Chennai's former Mayor Saidai Duraisamy, the special guest, honored 83 excellent teachers from government and private schools across Tamil Nadu at AMET University's 32nd Foundation Day."
+  },
+  {
+    "id": 26,
+    "type": "article",
+    "title": "M.G.R. Self-Financing College Scheme: Saidai Duraisamy's Speech",
+    "newspaper": "தினத் தந்தி (Dina Thanthi)",
+    "date": "2025-02-16",
+    "imageUrl": "assets/media/articles/mgr-college-scheme-feb-2025.jpg",
+    "excerpt": "M.G.R.'s self-financing college scheme paved the way for rural students to study. Saidai Duraisamy speaks about M.G.R.'s principles and honest service politics."
+  },
+  {
+    "id": 27,
+    "type": "article",
+    "title": "Group-1 Main Exam Training: Free Coaching with Incentive",
+    "newspaper": "தின மலர் (Dina Malar)",
+    "date": "2025-08-29",
+    "imageUrl": "assets/media/articles/group1-main-training-aug-2025.jpg",
+    "excerpt": "Coaching for the main examination will be provided with an incentive for those who passed the TNPSC Group-1 preliminary examination, announced Manithaneyam IAS Free Education Academy."
   }
 ]
-

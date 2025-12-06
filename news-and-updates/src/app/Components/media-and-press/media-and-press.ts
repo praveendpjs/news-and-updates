@@ -6,7 +6,7 @@ import mediaData from './media.json';
 
 interface MediaItem {
   id: number;
-  type: 'article' | 'video';
+  type: 'article' | 'video' | 'youtube' | 'twitter' | 'instagram';
   title: string;
   date: string;
   newspaper?: string;
@@ -15,6 +15,8 @@ interface MediaItem {
   excerpt?: string;
   description?: string;
   youtubeVideoId?: string;
+  twitterEmbedId?: string;
+  instagramEmbedId?: string;
   thumbnailUrl?: string;
 }
 
@@ -27,7 +29,7 @@ interface MediaItem {
 export class MediaAndPress {
   mediaItems: MediaItem[] = mediaData as MediaItem[];
   
-  selectedType: 'all' | 'article' | 'video' = 'all';
+  selectedType: 'all' | 'article' | 'video' | 'youtube' | 'twitter' | 'instagram' = 'all';
   searchQuery: string = '';
   sortOrder: 'newest' | 'oldest' = 'newest';
 
@@ -38,7 +40,14 @@ export class MediaAndPress {
 
     // Type filter
     if (this.selectedType !== 'all') {
-      filtered = filtered.filter((item) => item.type === this.selectedType);
+      if (this.selectedType === 'video') {
+        // 'video' filter shows all video types
+        filtered = filtered.filter((item) => 
+          item.type === 'video' || item.type === 'youtube' || item.type === 'twitter' || item.type === 'instagram'
+        );
+      } else {
+        filtered = filtered.filter((item) => item.type === this.selectedType);
+      }
     }
 
     // Search filter
@@ -70,6 +79,20 @@ export class MediaAndPress {
 
   getYouTubeThumbnail(videoId: string): string {
     return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  }
+
+  getTwitterEmbedUrl(tweetId: string): SafeResourceUrl {
+    const url = `https://platform.twitter.com/embed/Tweet.html?id=${tweetId}`;
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  getInstagramEmbedUrl(postId: string): SafeResourceUrl {
+    const url = `https://www.instagram.com/p/${postId}/embed/`;
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  isVideoType(type: string): boolean {
+    return type === 'video' || type === 'youtube' || type === 'twitter' || type === 'instagram';
   }
 
   formatDate(dateString: string): string {

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import candidatesData from './candidates.json';
 
 interface Candidate {
@@ -13,7 +14,7 @@ interface Candidate {
 
 @Component({
   selector: 'app-successful-candidates',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './successful-candidates.html',
   styleUrl: './successful-candidates.css',
 })
